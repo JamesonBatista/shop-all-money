@@ -1,4 +1,5 @@
 import { INVESTMENT_OPTIONS } from '../data/investments'
+import { trackInvest, trackPix, trackTransfer } from '../firebase/analytics'
 import {
   appendLedger,
   findPixKey,
@@ -81,6 +82,7 @@ export async function transferByAccount(params: {
     createdAt,
   })
 
+  await trackTransfer()
   return { to }
 }
 
@@ -164,6 +166,7 @@ export async function transferByPixKey(params: {
     createdAt,
   })
 
+  await trackPix()
   return { to, pixKey }
 }
 
@@ -203,6 +206,7 @@ export async function investAmount(params: {
     createdAt,
     meta: { optionId: option.id },
   })
+  await trackInvest(params.amount, option.name)
   return position
 }
 

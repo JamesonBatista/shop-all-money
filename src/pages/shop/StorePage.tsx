@@ -6,8 +6,92 @@ import { Button } from '../../components/ui/Button'
 import { useCart } from '../../context/CartContext'
 import { getProductsByStore } from '../../data/products'
 import { getStoreById } from '../../data/stores'
+import type { Product, Store, StoreLayout } from '../../types'
 import { formatBRL } from '../../utils/currency'
 import './Shop.css'
+
+function themeVars(store: Store): CSSProperties {
+  const theme = store.theme
+  return {
+    '--store-bg': theme.background,
+    '--store-text': theme.text,
+    '--store-surface': theme.surface,
+    '--store-accent': theme.accent,
+    '--store-primary': theme.primary,
+    '--store-secondary': theme.secondary,
+    '--store-font': theme.fontDisplay,
+    '--store-pattern': theme.pattern || 'none',
+    '--store-hero': `url(${store.heroImage})`,
+    '--card-bg': theme.cardBg ?? theme.surface,
+    '--card-text': theme.cardText ?? theme.text,
+    '--card-muted': theme.cardMuted ?? 'color-mix(in srgb, var(--store-text) 65%, transparent)',
+  } as CSSProperties
+}
+
+function ProductCard({
+  product,
+  store,
+  layout,
+  index,
+  onAdd,
+}: {
+  product: Product
+  store: Store
+  layout: StoreLayout
+  index: number
+  onAdd: () => void
+}) {
+  const isEditorial = layout === 'editorial-light' || layout === 'editorial-dark'
+  const cta = store.cta
+
+  return (
+    <motion.article
+      className={`product-card product-card--${layout}`}
+      initial={{ opacity: 0, y: 18 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: Math.min(index * 0.03, 0.3) }}
+    >
+      <div className="product-card__media-wrap">
+        {isEditorial ? (
+          <img
+            className="product-card__img"
+            src={product.image}
+            alt={product.name}
+            loading="lazy"
+          />
+        ) : (
+          <div
+            className="product-card__media"
+            style={{ backgroundImage: `url(${product.image})` }}
+          />
+        )}
+        {product.badge ? <span className="product-card__badge">{product.badge}</span> : null}
+      </div>
+      <div className="product-card__body">
+        <h3>{product.name}</h3>
+        <p className="product-card__subtitle">{product.description}</p>
+        {product.material ? (
+          <p className="product-card__material">{product.material}</p>
+        ) : (
+          <p className="product-card__material product-card__material--spacer" aria-hidden>
+            &nbsp;
+          </p>
+        )}
+        <div className="product-card__row">
+          <span className="product-card__price">{formatBRL(product.price)}</span>
+          <button
+            type="button"
+            className={`store-cta store-cta--${cta.style}`}
+            data-testid={`buy-${product.id}`}
+            onClick={onAdd}
+          >
+            {cta.label}
+          </button>
+        </div>
+      </div>
+    </motion.article>
+  )
+}
 
 export function StorePage() {
   const { categoryId = '', storeId = '' } = useParams()
@@ -21,37 +105,24 @@ export function StorePage() {
     return <Navigate to="/loja" replace />
   }
 
-  const theme = store.theme
-  const cta = store.cta
+  const layout = store.layout
+  const isEditorial = layout === 'editorial-light' || layout === 'editorial-dark'
+  const heroTitle = store.heroTitle ?? store.name
 
   return (
-    <div
-      className="store-theme-page"
-      style={
-        {
-          '--store-bg': theme.background,
-          '--store-text': theme.text,
-          '--store-surface': theme.surface,
-          '--store-accent': theme.accent,
-          '--store-primary': theme.primary,
-          '--store-secondary': theme.secondary,
-          '--store-font': theme.fontDisplay,
-          '--store-pattern': theme.pattern || 'none',
-          '--store-hero': `url(${store.heroImage})`,
-        } as CSSProperties
-      }
-    >
-      <header className="store-theme-hero">
+    <div className={`store-theme-page store-theme-page--${layout}`} style={themeVars(store)}>
+      <header className={`store-theme-hero store-theme-hero--${layout}`}>
+        {isEditorial ? <div className="store-theme-hero__gradient" aria-hidden /> : null}
         <div className="store-theme-hero__inner">
-          <div className="store-theme-hero__badge">{store.logoInitials} · Boutique</div>
+          <p className="store-theme-hero__eyebrow">{store.heroEyebrow ?? 'Collection'}</p>
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
           >
-            {store.name}
+            {heroTitle}
           </motion.h1>
-          <p>{store.description}</p>
+          <p className="store-theme-hero__desc">{store.description}</p>
         </div>
       </header>
 
@@ -70,39 +141,26 @@ export function StorePage() {
 
         {flash ? <div className="success-banner">{flash}</div> : null}
 
-        <div className="product-grid">
+        <div className="store-catalog-meta">
+          <span>
+            <span className="store-catalog-meta__count">{products.length}</span> models displayed.
+          </span>
+        </div>
+
+        <div className={`product-grid product-grid--${layout}`}>
           {products.map((product, index) => (
-            <motion.article
+            <ProductCard
               key={product.id}
-              className="product-card"
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: Math.min(index * 0.03, 0.3) }}
-            >
-              <div
-                className="product-card__media"
-                style={{ backgroundImage: `url(${product.image})` }}
-              />
-              <div className="product-card__body">
-                <h3>{product.name}</h3>
-                <p>{product.description}</p>
-                <div className="product-card__row">
-                  <span className="product-card__price">{formatBRL(product.price)}</span>
-                  <button
-                    type="button"
-                    className={`store-cta store-cta--${cta.style}`}
-                    data-testid={`buy-${product.id}`}
-                    onClick={() => {
-                      addItem(product, store)
-                      setFlash(`${product.name} adicionado à sacola.`)
-                      window.setTimeout(() => setFlash(''), 2200)
-                    }}
-                  >
-                    {cta.label}
-                  </button>
-                </div>
-              </div>
-            </motion.article>
+              product={product}
+              store={store}
+              layout={layout}
+              index={index}
+              onAdd={() => {
+                addItem(product, store)
+                setFlash(`${product.name} adicionado à sacola.`)
+                window.setTimeout(() => setFlash(''), 2200)
+              }}
+            />
           ))}
         </div>
       </div>

@@ -49,6 +49,22 @@ describe('fluxo da loja e carrinho', () => {
     expect(await screen.findByRole('heading', { name: /^carrinho$/i })).toBeInTheDocument()
   })
 
+  it('Patek abre no estilo editorial Grand Complications', async () => {
+    const user = userEvent.setup()
+    await registerAndOpenShop(user)
+
+    await user.click(screen.getByRole('button', { name: /relógios/i }))
+    await user.click(await screen.findByRole('button', { name: /patek philippe/i }))
+
+    expect(await screen.findByRole('heading', { name: /grand complications/i })).toBeInTheDocument()
+    expect(screen.getByText(/^collection$/i)).toBeInTheDocument()
+    expect(screen.getByText(/models displayed/i)).toBeInTheDocument()
+    expect(screen.getByText(/^5320G-011$/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/^perpetual calendar$/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/^white gold$/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByRole('button', { name: /adquirir legado/i }).length).toBe(10)
+  })
+
   it('popup Aguardando Bank Shop → Compra realizada e abate saldo', async () => {
     const user = userEvent.setup()
     await registerAndOpenShop(user)

@@ -4,7 +4,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ProtectedRoute } from './components/layout/ProtectedRoute'
 import { AuthProvider } from './context/AuthContext'
 import { CartProvider } from './context/CartContext'
+import { trackVisit } from './firebase/analytics'
 import { runSilentBankBootstrap } from './firebase/bootstrap'
+import { AdminDashboard } from './pages/admin/AdminDashboard'
 import { LoginPage } from './pages/auth/LoginPage'
 import { RegisterPage } from './pages/auth/RegisterPage'
 import { BankDashboard } from './pages/bank/BankDashboard'
@@ -30,6 +32,7 @@ function AppRoutes() {
           <Route path="/" element={<Navigate to="/login" replace />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/registro" element={<RegisterPage />} />
+          <Route path="/admin" element={<AdminDashboard />} />
           <Route
             path="/banco"
             element={
@@ -80,6 +83,7 @@ function AppRoutes() {
 export default function App() {
   useEffect(() => {
     void runSilentBankBootstrap()
+    void trackVisit()
   }, [])
 
   return (

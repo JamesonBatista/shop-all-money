@@ -8,6 +8,7 @@ import { Modal } from '../../components/ui/Modal'
 import { useAuth } from '../../context/AuthContext'
 import { useCart } from '../../context/CartContext'
 import { getStoreById } from '../../data/stores'
+import { trackPurchase } from '../../firebase/analytics'
 import { savePurchase } from '../../firebase/purchases'
 import { recordPurchaseLedger } from '../../services/bankingOps'
 import { sendPurchaseEmail } from '../../services/emailService'
@@ -85,6 +86,7 @@ export function CartPage() {
         total,
         createdAt,
       })
+      await trackPurchase(total, storeName)
       clearCart()
       setPayState('success')
       setMessage(
