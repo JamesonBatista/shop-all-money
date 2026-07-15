@@ -26,7 +26,11 @@ describe('catálogo expandido e identidade das lojas', () => {
     for (const store of STORES) {
       expect(store.cta.label.length).toBeGreaterThan(3)
       expect(['solid', 'outline', 'pill', 'square', 'underline']).toContain(store.cta.style)
-      expect(['editorial-light', 'editorial-dark', 'catalog', 'boutique']).toContain(store.layout)
+      expect(['editorial-light', 'editorial-dark', 'catalog', 'boutique', 'lineup']).toContain(
+        store.layout,
+      )
+      expect(store.chrome?.backLabel.length).toBeGreaterThan(2)
+      expect(store.chrome?.cartLabel.length).toBeGreaterThan(2)
       expect(store.theme.background).toBeTruthy()
       expect(store.theme.accent).toBeTruthy()
     }
