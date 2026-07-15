@@ -20,11 +20,17 @@ describe('catalog integrity', () => {
     )
   })
 
-  it('lists multiple luxury watch houses', () => {
+  it('lists the top luxury watch houses', () => {
     const watches = getStoresByCategory('relogios')
-    expect(watches.length).toBeGreaterThanOrEqual(4)
+    expect(watches.length).toBeGreaterThanOrEqual(5)
     expect(watches.map((s) => s.name)).toEqual(
-      expect.arrayContaining(['Rolex', 'Patek Philippe', 'Audemars Piguet', 'Omega']),
+      expect.arrayContaining([
+        'Rolex',
+        'Patek Philippe',
+        'Audemars Piguet',
+        'Richard Mille',
+        'Vacheron Constantin',
+      ]),
     )
   })
 

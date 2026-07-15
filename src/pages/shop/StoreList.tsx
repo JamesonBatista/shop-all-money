@@ -27,8 +27,8 @@ export function StoreList() {
             <h1>{category.name}</h1>
             <p>
               {category.id === 'relogios'
-                ? 'Maisons de luxo — escolha a boutique onde deseja comprar.'
-                : `Lojas selecionadas em ${category.name.toLowerCase()}.`}
+                ? 'As maisons mais exclusivas do mundo — Patek, Richard Mille, AP, Vacheron e Rolex.'
+                : `As marcas e casas mais caras do mundo em ${category.name.toLowerCase()}.`}
             </p>
           </div>
           <Button variant="secondary" onClick={() => navigate('/carrinho')}>

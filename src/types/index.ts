@@ -31,7 +31,14 @@ export interface CartItem {
   quantity: number
 }
 
-export type StoreLayout = 'editorial-light' | 'editorial-dark' | 'catalog' | 'boutique'
+export type StoreLayout =
+  | 'editorial-light'
+  | 'editorial-dark'
+  | 'catalog'
+  | 'boutique'
+  | 'lineup'
+
+export type ChromeStyle = 'solid' | 'outline' | 'pill' | 'square' | 'underline'
 
 export interface Product {
   id: string
@@ -50,7 +57,13 @@ export interface Product {
 
 export interface StoreCta {
   label: string
-  style: 'solid' | 'outline' | 'pill' | 'square' | 'underline'
+  style: ChromeStyle
+}
+
+export interface StoreChrome {
+  backLabel: string
+  cartLabel: string
+  style: ChromeStyle
 }
 
 export interface Store {
@@ -68,6 +81,7 @@ export interface Store {
   heroEyebrow?: string
   /** Optional hero H1 (e.g. Grand Complications); falls back to name */
   heroTitle?: string
+  chrome: StoreChrome
 }
 
 export interface StoreTheme {
