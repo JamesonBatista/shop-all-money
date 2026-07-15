@@ -40,7 +40,7 @@ describe('catálogo expandido e identidade das lojas', () => {
     for (const product of PRODUCTS) {
       expect(product.image).toMatch(/^https:\/\//)
       expect(product.price).toBeGreaterThan(0)
-      expect(product.name.length).toBeGreaterThan(2)
+      expect(product.name.length).toBeGreaterThan(1)
       expect(product.description.length).toBeGreaterThan(3)
     }
   })

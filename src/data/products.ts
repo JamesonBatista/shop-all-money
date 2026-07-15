@@ -1996,7 +1996,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'leica-02',
     storeId: 'leica',
-    name: 'Q3',
+    name: 'Leica Q3',
     description: 'Fixed Summilux 28mm',
     price: 32000,
     image: 'https://picsum.photos/seed/bankshop-lux-162/1100/1400',

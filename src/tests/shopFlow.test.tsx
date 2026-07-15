@@ -1,4 +1,4 @@
-import { screen, within, waitFor } from '@testing-library/react'
+import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import './mocks/firebase'
@@ -30,26 +30,30 @@ describe('fluxo da loja e carrinho', () => {
     localStorage.clear()
   })
 
-  it('navega categorias → lojas de relógios → Rolex → sacola com CTA próprio', async () => {
+  it('navega categorias → lojas de relógios → Rolex com chrome e CTA temáticos', async () => {
     const user = userEvent.setup()
     await registerAndOpenShop(user)
 
     await user.click(screen.getByRole('button', { name: /relógios/i }))
     expect(await screen.findByRole('heading', { name: /^relógios$/i })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /rolex/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /patek philippe/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /richard mille/i })).toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: /rolex/i }))
-    expect(await screen.findByRole('heading', { name: /^rolex$/i })).toBeInTheDocument()
-    expect(screen.getAllByRole('button', { name: /reservar peça/i }).length).toBeGreaterThan(0)
+    expect(await screen.findByRole('heading', { name: /oyster perpetual/i })).toBeInTheDocument()
+    expect(screen.getByTestId('store-back')).toHaveTextContent(/world of rolex/i)
+    expect(screen.getByTestId('store-cart')).toHaveTextContent(/my rolex/i)
 
-    const buyButtons = screen.getAllByRole('button', { name: /reservar peça/i })
+    const buyButtons = screen.getAllByRole('button', { name: /reserve your rolex/i })
+    expect(buyButtons.length).toBe(10)
     await user.click(buyButtons[0])
     expect(await screen.findByText(/adicionado à sacola/i)).toBeInTheDocument()
-    await user.click(screen.getByRole('button', { name: /sacola \(1\)/i }))
+    await user.click(screen.getByTestId('store-cart'))
     expect(await screen.findByRole('heading', { name: /^carrinho$/i })).toBeInTheDocument()
   })
 
-  it('Patek abre no estilo editorial Grand Complications', async () => {
+  it('Patek abre no estilo editorial Grand Complications com chrome próprio', async () => {
     const user = userEvent.setup()
     await registerAndOpenShop(user)
 
@@ -62,7 +66,9 @@ describe('fluxo da loja e carrinho', () => {
     expect(screen.getByText(/^5320G-011$/i)).toBeInTheDocument()
     expect(screen.getAllByText(/^perpetual calendar$/i).length).toBeGreaterThan(0)
     expect(screen.getAllByText(/^white gold$/i).length).toBeGreaterThan(0)
-    expect(screen.getAllByRole('button', { name: /adquirir legado/i }).length).toBe(10)
+    expect(screen.getAllByRole('button', { name: /discover the model/i }).length).toBe(10)
+    expect(screen.getByTestId('store-back')).toHaveTextContent(/collections/i)
+    expect(screen.getByTestId('store-cart')).toHaveTextContent(/selection/i)
   })
 
   it('popup Aguardando Bank Shop → Compra realizada e abate saldo', async () => {
@@ -70,12 +76,12 @@ describe('fluxo da loja e carrinho', () => {
     await registerAndOpenShop(user)
 
     const initialBalance = 500_000
-    await user.click(screen.getByRole('button', { name: /relógios/i }))
-    await user.click(await screen.findByRole('button', { name: /omega/i }))
+    await user.click(screen.getByRole('button', { name: /eletrônicos/i }))
+    await user.click(await screen.findByRole('button', { name: /bang & olufsen/i }))
 
-    const buy = (await screen.findAllByRole('button', { name: /comprar agora/i }))[0]
+    const buy = (await screen.findAllByRole('button', { name: /shop b&o/i }))[0]
     await user.click(buy)
-    await user.click(screen.getByRole('button', { name: /sacola \(1\)/i }))
+    await user.click(screen.getByTestId('store-cart'))
 
     await user.click(screen.getByRole('button', { name: /pagar agora/i }))
     expect(await screen.findByTestId('pay-waiting')).toHaveTextContent(/aguardando bank shop/i)
@@ -91,17 +97,17 @@ describe('fluxo da loja e carrinho', () => {
     await user.click(goBank[goBank.length - 1])
     expect(await screen.findByText(/saldo disponível/i)).toBeInTheDocument()
 
-    // Speedmaster is first omega product at 42000
-    expect(expectMoneyText(initialBalance - 42_000)).toBeInTheDocument()
+    // Beosound A9 first B&O product at 12500
+    expect(expectMoneyText(initialBalance - 12_500)).toBeInTheDocument()
   })
 
   it('histórico de cartões mostra compra após checkout', async () => {
     const user = userEvent.setup()
     await registerAndOpenShop(user)
-    await user.click(screen.getByRole('button', { name: /relógios/i }))
-    await user.click(await screen.findByRole('button', { name: /omega/i }))
-    await user.click((await screen.findAllByRole('button', { name: /comprar agora/i }))[0])
-    await user.click(screen.getByRole('button', { name: /sacola \(1\)/i }))
+    await user.click(screen.getByRole('button', { name: /eletrônicos/i }))
+    await user.click(await screen.findByRole('button', { name: /bang & olufsen/i }))
+    await user.click((await screen.findAllByRole('button', { name: /shop b&o/i }))[0])
+    await user.click(screen.getByTestId('store-cart'))
     await user.click(screen.getByRole('button', { name: /pagar agora/i }))
     await waitFor(() => expect(screen.getByTestId('pay-success')).toBeInTheDocument(), {
       timeout: 4000,
@@ -110,7 +116,7 @@ describe('fluxo da loja e carrinho', () => {
     await user.click(goBank[goBank.length - 1])
     await user.click(await screen.findByRole('button', { name: /cartões/i }))
     const cards = await screen.findByTestId('cards-panel')
-    expect(cards).toHaveTextContent(/omega/i)
+    expect(cards).toHaveTextContent(/bang & olufsen/i)
   })
 
   it('bloqueia compra sem saldo e mostra erro no popup', async () => {
@@ -129,24 +135,31 @@ describe('fluxo da loja e carrinho', () => {
     await user.click(screen.getByRole('button', { name: /ir para a loja/i }))
     await user.click(await screen.findByRole('button', { name: /relógios/i }))
     await user.click(await screen.findByRole('button', { name: /rolex/i }))
-    await user.click(screen.getAllByRole('button', { name: /reservar peça/i })[0])
-    await user.click(screen.getByRole('button', { name: /sacola \(1\)/i }))
+    await user.click(screen.getAllByRole('button', { name: /reserve your rolex/i })[0])
+    await user.click(screen.getByTestId('store-cart'))
     await user.click(screen.getByRole('button', { name: /pagar agora/i }))
 
-    await waitFor(() => {
-      expect(screen.getByRole('alert')).toHaveTextContent(/saldo insuficiente/i)
-    }, { timeout: 4000 })
+    await waitFor(
+      () => {
+        expect(screen.getByRole('alert')).toHaveTextContent(/saldo insuficiente/i)
+      },
+      { timeout: 4000 },
+    )
   })
 
-  it('cada boutique Rolex e AP usa CTAs diferentes', async () => {
+  it('Rolex e AP usam CTAs e chrome diferentes entre si', async () => {
     const user = userEvent.setup()
     await registerAndOpenShop(user)
     await user.click(screen.getByRole('button', { name: /relógios/i }))
     await user.click(await screen.findByRole('button', { name: /rolex/i }))
-    expect(screen.getAllByRole('button', { name: /reservar peça/i }).length).toBe(10)
+    expect(screen.getAllByRole('button', { name: /reserve your rolex/i }).length).toBe(10)
+    const rolexBack = screen.getByTestId('store-back').textContent
+    const rolexCart = screen.getByTestId('store-cart').textContent
 
-    await user.click(screen.getByRole('button', { name: /voltar às lojas/i }))
+    await user.click(screen.getByTestId('store-back'))
     await user.click(await screen.findByRole('button', { name: /audemars piguet/i }))
-    expect(screen.getAllByRole('button', { name: /levar royal oak/i }).length).toBe(10)
+    expect(screen.getAllByRole('button', { name: /explore royal oak/i }).length).toBe(10)
+    expect(screen.getByTestId('store-back').textContent).not.toBe(rolexBack)
+    expect(screen.getByTestId('store-cart').textContent).not.toBe(rolexCart)
   })
 })
