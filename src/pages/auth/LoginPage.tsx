@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState, type FormEvent } from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 import { AnimatedBackground } from '../../components/layout/AnimatedBackground'
 import { Button } from '../../components/ui/Button'
 import { Input } from '../../components/ui/Input'
@@ -36,9 +36,9 @@ export function LoginPage() {
       <AnimatedBackground />
       <motion.div
         className="auth-shell"
-        initial={{ opacity: 0, scale: 0.96, y: 20 }}
+        initial={{ opacity: 0, scale: 0.98, y: 16 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       >
         <aside className="auth-brand">
           <motion.div
@@ -62,7 +62,11 @@ export function LoginPage() {
           <p className="auth-panel__sub">Entre com o e-mail cadastrado no Bank Shop.</p>
 
           <form className="auth-form" onSubmit={onSubmit} noValidate>
-            {error ? <div className="auth-alert">{error}</div> : null}
+            {error ? (
+              <div className="auth-alert" role="alert">
+                {error}
+              </div>
+            ) : null}
             <Input
               label="E-mail"
               type="email"
@@ -89,7 +93,15 @@ export function LoginPage() {
           </form>
 
           <p className="auth-switch">
-            Ainda não tem conta? <Link to="/registro">Criar registro</Link>
+            Ainda não tem conta?{' '}
+            <button
+              type="button"
+              className="auth-switch__link"
+              data-testid="go-register"
+              onClick={() => navigate('/registro')}
+            >
+              Criar registro
+            </button>
           </p>
         </section>
       </motion.div>

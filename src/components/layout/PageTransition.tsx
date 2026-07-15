@@ -2,17 +2,26 @@ import { AnimatePresence, motion } from 'framer-motion'
 import type { ReactNode } from 'react'
 import { useLocation } from 'react-router-dom'
 
-export function PageTransition({ children }: { children: ReactNode }) {
+interface PageTransitionProps {
+  children: ReactNode
+}
+
+/**
+ * Animates route changes without breaking React Router matching.
+ * The keyed wrapper must receive a stable `location` snapshot via Routes.
+ */
+export function PageTransition({ children }: PageTransitionProps) {
   const location = useLocation()
 
   return (
     <AnimatePresence mode="wait">
       <motion.div
         key={location.pathname}
-        initial={{ opacity: 0, y: 18, filter: 'blur(6px)' }}
-        animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-        exit={{ opacity: 0, y: -12, filter: 'blur(4px)' }}
-        transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
+        className="page-transition"
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
       >
         {children}
       </motion.div>
