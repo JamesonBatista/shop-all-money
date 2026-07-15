@@ -26,6 +26,7 @@ describe('painel admin', () => {
     expect(screen.getByText(/^visitas totais$/i)).toBeInTheDocument()
     expect(screen.getByText(/^cadastros$/i)).toBeInTheDocument()
     expect(screen.getByText(/^compras$/i)).toBeInTheDocument()
+    expect(await screen.findByTestId('firestore-status')).toBeInTheDocument()
   })
 
   it('bloqueia /admin sem sessão admin', async () => {

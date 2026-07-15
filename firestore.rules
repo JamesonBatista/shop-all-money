@@ -1,0 +1,37 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Demo Bank Shop — open client access for users, analytics and banking mirrors.
+    // Tighten before any public production launch.
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+    match /analytics/{docId} {
+      allow read, write: if true;
+    }
+    match /analytics_events/{eventId} {
+      allow read, write: if true;
+    }
+    match /purchases/{purchaseId} {
+      allow read, write: if true;
+    }
+    match /ledger/{entryId} {
+      allow read, write: if true;
+    }
+    match /pix_keys/{keyId} {
+      allow read, write: if true;
+    }
+    match /investments/{investmentId} {
+      allow read, write: if true;
+    }
+    match /meta/{docId} {
+      allow read, write: if true;
+    }
+    match /catalog/{docId} {
+      allow read, write: if true;
+    }
+    match /bootstrap_markers/{docId} {
+      allow read, write: if true;
+    }
+  }
+}

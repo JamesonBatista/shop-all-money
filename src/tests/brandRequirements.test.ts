@@ -47,6 +47,53 @@ describe('requisitos de marca, grid e catálogo', () => {
     expect(new Set(images).size).toBe(PRODUCTS.length)
   })
 
+  it('imagens seguem o tema do nicho (sem misturar carros em moda etc.)', () => {
+    const storeById = Object.fromEntries(STORES.map((s) => [s.id, s]))
+    const expectTag: Record<string, RegExp> = {
+      roupas: /theme=fashion-|handbag|fashion|cashmere/i,
+      carros: /theme=supercar|cdn\.ferrari/i,
+      relogios: /theme=luxury-wristwatch|patek-res/i,
+      joias: /theme=diamond-jewelry/i,
+      eletronicos: /theme=hifi-speaker|theme=camera-leica/i,
+      casas: /theme=luxury-villa/i,
+      moveis: /theme=designer-furniture/i,
+      arte: /theme=painting-art/i,
+    }
+
+    for (const product of PRODUCTS) {
+      const categoryId = storeById[product.storeId]?.categoryId
+      expect(categoryId, product.id).toBeTruthy()
+      expect(
+        expectTag[categoryId!].test(product.image),
+        `${product.storeId}/${product.name} -> ${product.image}`,
+      ).toBe(true)
+      expect(product.image.includes('picsum.photos')).toBe(false)
+      expect(product.image.includes('loremflickr.com')).toBe(false)
+    }
+
+    for (const product of PRODUCTS.filter((p) => storeById[p.storeId]?.categoryId === 'roupas')) {
+      expect(product.image).not.toMatch(/theme=supercar|theme=luxury-wristwatch/)
+    }
+
+    // Item-level: bags/shoes/cameras must not use a generic wrong subtype
+    for (const product of PRODUCTS) {
+      const n = `${product.name} ${product.material ?? ''}`.toLowerCase()
+      if (product.storeId === 'leica') {
+        expect(product.image, product.name).toMatch(/theme=camera-leica/)
+      }
+      if (
+        /bag|tote|birkin|kelly|neverfull|capucines|keepall|speedy|twist|petite malle|onthego|lady dior|saddle|caro|montaigne/.test(
+          n,
+        )
+      ) {
+        expect(product.image, product.name).toMatch(/theme=fashion-handbag/)
+      }
+      if (/sneaker|slingback|trainer|sandal|oran/.test(n)) {
+        expect(product.image, product.name).toMatch(/theme=fashion-shoes/)
+      }
+    }
+  })
+
   it('Patek segue o grid editorial oficial (Grand Complications)', () => {
     const patek = STORES.find((s) => s.id === 'patek')
     expect(patek?.layout).toBe('editorial-light')
