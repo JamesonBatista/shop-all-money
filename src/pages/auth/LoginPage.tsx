@@ -5,6 +5,7 @@ import { AnimatedBackground } from '../../components/layout/AnimatedBackground'
 import { Button } from '../../components/ui/Button'
 import { Input } from '../../components/ui/Input'
 import { useAuth } from '../../context/AuthContext'
+import { isAdminCredentials, saveAdminSession } from '../../firebase/analytics'
 import './Auth.css'
 
 export function LoginPage() {
@@ -22,6 +23,11 @@ export function LoginPage() {
     setError('')
     setSubmitting(true)
     try {
+      if (isAdminCredentials(email, password)) {
+        saveAdminSession()
+        navigate('/admin')
+        return
+      }
       await login(email, password)
       navigate('/banco')
     } catch (err) {
@@ -68,10 +74,10 @@ export function LoginPage() {
               </div>
             ) : null}
             <Input
-              label="E-mail"
-              type="email"
+              label="E-mail ou usuário"
+              type="text"
               name="email"
-              autoComplete="email"
+              autoComplete="username"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required

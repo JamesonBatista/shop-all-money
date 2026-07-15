@@ -3,6 +3,7 @@ import type { ReactElement, ReactNode } from 'react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import { AuthProvider } from '../context/AuthContext'
 import { CartProvider } from '../context/CartContext'
+import { AdminDashboard } from '../pages/admin/AdminDashboard'
 import { LoginPage } from '../pages/auth/LoginPage'
 import { RegisterPage } from '../pages/auth/RegisterPage'
 import { BankDashboard } from '../pages/bank/BankDashboard'
@@ -39,6 +40,7 @@ export function AppTestRoutes() {
       <Route path="/" element={<LoginPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/registro" element={<RegisterPage />} />
+      <Route path="/admin" element={<AdminDashboard />} />
       <Route
         path="/banco"
         element={

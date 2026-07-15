@@ -67,7 +67,7 @@ describe('fluxo de registro e banco', () => {
     await user.click(screen.getByRole('button', { name: /^sair$/i }))
     expect(await screen.findByRole('heading', { name: /acesse sua conta/i })).toBeInTheDocument()
 
-    await user.type(screen.getByLabelText(/^e-mail$/i), 'bruno@bankshop.test')
+    await user.type(screen.getByLabelText(/e-mail ou usuário/i), 'bruno@bankshop.test')
     await user.type(screen.getByLabelText(/^senha$/i), 'errada')
     await user.click(screen.getByRole('button', { name: /entrar no banco/i }))
     expect(await screen.findByRole('alert')).toHaveTextContent(/incorretos/i)

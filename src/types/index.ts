@@ -31,13 +31,21 @@ export interface CartItem {
   quantity: number
 }
 
+export type StoreLayout = 'editorial-light' | 'editorial-dark' | 'catalog' | 'boutique'
+
 export interface Product {
   id: string
   storeId: string
+  /** Display title — for watches often the reference (e.g. 5320G-011) */
   name: string
+  /** Secondary line — complication / short pitch */
   description: string
   price: number
   image: string
+  /** Material / finish line (Patek-style: White gold) */
+  material?: string
+  /** Optional badge (e.g. 2026) */
+  badge?: string
 }
 
 export interface StoreCta {
@@ -55,6 +63,11 @@ export interface Store {
   logoInitials: string
   heroImage: string
   cta: StoreCta
+  layout: StoreLayout
+  /** Hero eyebrow, e.g. Collection */
+  heroEyebrow?: string
+  /** Optional hero H1 (e.g. Grand Complications); falls back to name */
+  heroTitle?: string
 }
 
 export interface StoreTheme {
@@ -66,6 +79,9 @@ export interface StoreTheme {
   surface: string
   fontDisplay: string
   pattern?: string
+  cardBg?: string
+  cardText?: string
+  cardMuted?: string
 }
 
 export interface Category {

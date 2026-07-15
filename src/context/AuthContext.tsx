@@ -7,6 +7,7 @@ import {
   useState,
   type ReactNode,
 } from 'react'
+import { trackRegister } from '../firebase/analytics'
 import {
   clearSession,
   createUser,
@@ -124,6 +125,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
 
     await createUser(account)
+    await trackRegister(account.fullName)
     saveSession(account.id)
     setLastYieldCredit(0)
     setUser(account)
