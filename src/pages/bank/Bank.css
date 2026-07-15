@@ -1,0 +1,205 @@
+.bank-page {
+  min-height: 100vh;
+  padding: 1.25rem 1rem 3rem;
+}
+
+.bank-top {
+  width: min(1120px, 100%);
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.bank-brand {
+  font-family: var(--bs-display);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.bank-brand span {
+  color: var(--bs-gold);
+}
+
+.bank-top__actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.bank-grid {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 1.25rem;
+}
+
+.bank-hero-balance {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  padding: 2rem;
+  min-height: 280px;
+  background:
+    linear-gradient(135deg, rgba(31, 111, 106, 0.35), rgba(10, 26, 46, 0.92)),
+    url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80')
+      center/cover;
+  border: 1px solid rgba(201, 163, 106, 0.28);
+  box-shadow: var(--bs-shadow);
+}
+
+.bank-hero-balance__label {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(243, 239, 230, 0.75);
+}
+
+.bank-hero-balance__value {
+  margin: 0.6rem 0 0.3rem;
+  font-family: var(--bs-display);
+  font-size: clamp(2.6rem, 6vw, 3.8rem);
+  font-weight: 700;
+  color: var(--bs-cream);
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.bank-hero-balance__meta {
+  color: rgba(243, 239, 230, 0.8);
+  margin-bottom: 1.4rem;
+}
+
+.bank-hero-balance__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.bank-panel {
+  border-radius: 24px;
+  padding: 1.4rem;
+  background: rgba(18, 38, 63, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.bank-panel h2 {
+  margin: 0 0 1rem;
+  font-family: var(--bs-display);
+  font-size: 1.7rem;
+}
+
+.bank-info-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.bank-info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.95rem;
+}
+
+.bank-info-row span:first-child {
+  color: var(--bs-muted);
+}
+
+.bank-actions {
+  width: min(1120px, 100%);
+  margin: 1.25rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.9rem;
+}
+
+.bank-action {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(18, 38, 63, 0.65);
+  border-radius: 18px;
+  padding: 1.1rem;
+  text-align: left;
+  color: var(--bs-ink);
+  cursor: pointer;
+  transition:
+    transform var(--bs-transition),
+    border-color var(--bs-transition),
+    background var(--bs-transition),
+    box-shadow var(--bs-transition);
+}
+
+.bank-action:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 163, 106, 0.45);
+  background: rgba(27, 58, 92, 0.85);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.bank-action__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(135deg, rgba(31, 111, 106, 0.5), rgba(201, 163, 106, 0.25));
+  font-size: 1.15rem;
+}
+
+.bank-action strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.bank-action p {
+  margin: 0;
+  color: var(--bs-muted);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.bank-toast {
+  position: fixed;
+  bottom: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  background: rgba(18, 38, 63, 0.95);
+  border: 1px solid rgba(201, 163, 106, 0.4);
+  color: var(--bs-gold-soft);
+  box-shadow: var(--bs-shadow);
+}
+
+.deposit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .bank-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bank-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .bank-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .bank-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
