@@ -183,6 +183,154 @@
   gap: 1rem;
 }
 
+.bank-action.is-disabled,
+.bank-action:disabled {
+  opacity: 0.38;
+  filter: grayscale(1);
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  background: rgba(40, 48, 58, 0.55) !important;
+}
+
+.bank-action.is-disabled:hover,
+.bank-action:disabled:hover {
+  transform: none;
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.bank-modal-body {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.bank-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.bank-feature h3 {
+  margin: 0;
+  font-family: var(--bs-display);
+  font-size: 1.6rem;
+}
+
+.bank-feature h4 {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+}
+
+.bank-feature__sub,
+.bank-feature__meta {
+  margin: 0;
+  color: var(--bs-muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.bank-feature__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.bank-feature__block,
+.bank-feature__form,
+.bank-feature__confirm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-top: 0.4rem;
+}
+
+.bank-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.bank-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 0.85rem 0.9rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.bank-list li strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.bank-list li span,
+.bank-list li small {
+  display: block;
+  color: var(--bs-muted);
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.bank-list li em {
+  font-style: normal;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.bank-list li em.is-out {
+  color: #ef9a9a;
+}
+
+.bank-list li em.is-in {
+  color: #a5d6a7;
+}
+
+.invest-options {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.invest-option {
+  text-align: left;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: inherit;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition:
+    border-color var(--bs-transition),
+    background var(--bs-transition),
+    transform var(--bs-transition);
+}
+
+.invest-option strong,
+.invest-option span,
+.invest-option em {
+  display: block;
+}
+
+.invest-option span,
+.invest-option em {
+  color: var(--bs-muted);
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  font-style: normal;
+}
+
+.invest-option:hover,
+.invest-option.is-active {
+  border-color: rgba(201, 163, 106, 0.45);
+  background: rgba(201, 163, 106, 0.08);
+  transform: translateY(-1px);
+}
+
 @media (max-width: 900px) {
   .bank-grid {
     grid-template-columns: 1fr;

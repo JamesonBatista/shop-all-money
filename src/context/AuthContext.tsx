@@ -16,10 +16,17 @@ import {
   saveSession,
   updateUserBalance,
 } from '../firebase/users'
+import { processDailyYields, recordDepositLedger } from '../services/bankingOps'
 import type { CardOperator, UserAccount } from '../types'
 import { MAX_BALANCE } from '../types'
 import { canDeposit, validateBalance } from '../utils/currency'
-import { generateAccountNumber, generateAgency, isValidEmail, isValidFullName, isValidPassword } from '../utils/validation'
+import {
+  generateAccountNumber,
+  generateAgency,
+  isValidEmail,
+  isValidFullName,
+  isValidPassword,
+} from '../utils/validation'
 
 interface RegisterInput {
   fullName: string
@@ -32,12 +39,14 @@ interface RegisterInput {
 interface AuthContextValue {
   user: UserAccount | null
   loading: boolean
+  lastYieldCredit: number
   login: (email: string, password: string) => Promise<void>
   register: (input: RegisterInput) => Promise<void>
   logout: () => void
   deposit: (amount: number) => Promise<void>
   debit: (amount: number) => Promise<void>
   refreshUser: () => Promise<void>
+  clearYieldNotice: () => void
 }
 
 const AuthContext = createContext<AuthContextValue | null>(null)
@@ -45,6 +54,7 @@ const AuthContext = createContext<AuthContextValue | null>(null)
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<UserAccount | null>(null)
   const [loading, setLoading] = useState(true)
+  const [lastYieldCredit, setLastYieldCredit] = useState(0)
 
   const refreshUser = useCallback(async () => {
     const id = getSessionUserId()
@@ -58,6 +68,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     void (async () => {
+      const id = getSessionUserId()
+      if (id) {
+        const credited = await processDailyYields(id)
+        if (credited > 0) setLastYieldCredit(credited)
+      }
       await refreshUser()
       setLoading(false)
     })()
@@ -70,7 +85,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       throw new Error('E-mail ou senha incorretos.')
     }
     saveSession(found.id)
-    setUser(found)
+    const credited = await processDailyYields(found.id)
+    setLastYieldCredit(credited)
+    const refreshed = await getUserById(found.id)
+    setUser(refreshed)
   }, [])
 
   const register = useCallback(async (input: RegisterInput) => {
@@ -107,12 +125,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     await createUser(account)
     saveSession(account.id)
+    setLastYieldCredit(0)
     setUser(account)
   }, [])
 
   const logout = useCallback(() => {
     clearSession()
     setUser(null)
+    setLastYieldCredit(0)
   }, [])
 
   const deposit = useCallback(
@@ -122,6 +142,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (!check.ok) throw new Error(check.message)
       const next = Math.min(user.balance + amount, MAX_BALANCE)
       await updateUserBalance(user.id, next)
+      await recordDepositLedger({ userId: user.id, amount })
       setUser({ ...user, balance: next })
     },
     [user],
@@ -138,9 +159,33 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     [user],
   )
 
+  const clearYieldNotice = useCallback(() => setLastYieldCredit(0), [])
+
   const value = useMemo(
-    () => ({ user, loading, login, register, logout, deposit, debit, refreshUser }),
-    [user, loading, login, register, logout, deposit, debit, refreshUser],
+    () => ({
+      user,
+      loading,
+      lastYieldCredit,
+      login,
+      register,
+      logout,
+      deposit,
+      debit,
+      refreshUser,
+      clearYieldNotice,
+    }),
+    [
+      user,
+      loading,
+      lastYieldCredit,
+      login,
+      register,
+      logout,
+      deposit,
+      debit,
+      refreshUser,
+      clearYieldNotice,
+    ],
   )
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
