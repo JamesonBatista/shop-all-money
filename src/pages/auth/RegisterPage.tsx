@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useMemo, useState, type FormEvent } from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 import { AnimatedBackground } from '../../components/layout/AnimatedBackground'
 import { Button } from '../../components/ui/Button'
 import { CurrencyInput } from '../../components/ui/CurrencyInput'
@@ -77,14 +77,13 @@ export function RegisterPage() {
   }
 
   return (
-    <div className="auth-page">
+    <div className="auth-page" data-testid="register-page">
       <AnimatedBackground />
       <motion.div
         className="auth-shell"
-        initial={{ opacity: 0, x: 40 }}
+        initial={{ opacity: 0, x: 24 }}
         animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -40 }}
-        transition={{ duration: 0.45 }}
+        transition={{ duration: 0.35 }}
       >
         <aside className="auth-brand">
           <motion.div
@@ -107,8 +106,12 @@ export function RegisterPage() {
           <h1>Criar conta</h1>
           <p className="auth-panel__sub">Preencha os dados para liberar seu crédito digital.</p>
 
-          <form className="auth-form" onSubmit={onSubmit} noValidate>
-            {error ? <div className="auth-alert">{error}</div> : null}
+          <form className="auth-form" onSubmit={onSubmit} noValidate data-testid="register-form">
+            {error ? (
+              <div className="auth-alert" role="alert">
+                {error}
+              </div>
+            ) : null}
 
             <Input
               label="Nome completo"
@@ -150,7 +153,7 @@ export function RegisterPage() {
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.25 }}
               >
                 <CurrencyInput
                   label={`Valor em crédito (${cardOperator})`}
@@ -169,7 +172,15 @@ export function RegisterPage() {
           </form>
 
           <p className="auth-switch">
-            Já tem conta? <Link to="/login">Fazer login</Link>
+            Já tem conta?{' '}
+            <button
+              type="button"
+              className="auth-switch__link"
+              data-testid="go-login"
+              onClick={() => navigate('/login')}
+            >
+              Fazer login
+            </button>
           </p>
         </section>
       </motion.div>

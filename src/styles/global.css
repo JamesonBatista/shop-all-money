@@ -48,6 +48,12 @@ img {
   overflow-x: hidden;
 }
 
+.page-transition {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
