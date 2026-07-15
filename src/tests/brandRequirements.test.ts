@@ -74,6 +74,24 @@ describe('requisitos de marca, grid e catálogo', () => {
     for (const product of PRODUCTS.filter((p) => storeById[p.storeId]?.categoryId === 'roupas')) {
       expect(product.image).not.toMatch(/theme=supercar|theme=luxury-wristwatch/)
     }
+
+    // Item-level: bags/shoes/cameras must not use a generic wrong subtype
+    for (const product of PRODUCTS) {
+      const n = `${product.name} ${product.material ?? ''}`.toLowerCase()
+      if (product.storeId === 'leica') {
+        expect(product.image, product.name).toMatch(/theme=camera-leica/)
+      }
+      if (
+        /bag|tote|birkin|kelly|neverfull|capucines|keepall|speedy|twist|petite malle|onthego|lady dior|saddle|caro|montaigne/.test(
+          n,
+        )
+      ) {
+        expect(product.image, product.name).toMatch(/theme=fashion-handbag/)
+      }
+      if (/sneaker|slingback|trainer|sandal|oran/.test(n)) {
+        expect(product.image, product.name).toMatch(/theme=fashion-shoes/)
+      }
+    }
   })
 
   it('Patek segue o grid editorial oficial (Grand Complications)', () => {

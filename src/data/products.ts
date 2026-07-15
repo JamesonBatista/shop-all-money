@@ -532,7 +532,7 @@ export const PRODUCTS: Product[] = [
     name: 'Rodeo Charm',
     description: 'Bag accessory',
     price: 3200,
-    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=hermes-09-1',
+    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=hermes-09',
     material: 'Milo lambskin',
   },
   {
@@ -739,7 +739,7 @@ export const PRODUCTS: Product[] = [
     name: 'Neverfull MM',
     description: 'Everyday tote',
     price: 14500,
-    image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-02',
+    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=louis-vuitton-02',
     material: 'Monogram canvas',
   },
   {
@@ -757,7 +757,7 @@ export const PRODUCTS: Product[] = [
     name: 'Capucines MM',
     description: 'Structured leather',
     price: 42000,
-    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-04',
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=louis-vuitton-04',
     material: 'Taurillon',
   },
   {
@@ -766,7 +766,7 @@ export const PRODUCTS: Product[] = [
     name: 'LV Trainer',
     description: 'Sneaker',
     price: 6800,
-    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-05-1',
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-shoes&sig=lv-trainer',
     material: 'Leather / canvas',
   },
   {
@@ -775,7 +775,7 @@ export const PRODUCTS: Product[] = [
     name: 'Twist MM',
     description: 'Chain bag',
     price: 28000,
-    image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-06-1',
+    image: 'https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=louis-vuitton-06',
     material: 'Epi leather',
   },
   {
@@ -784,7 +784,7 @@ export const PRODUCTS: Product[] = [
     name: 'Petite Malle',
     description: 'Trunk mini',
     price: 38000,
-    image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-07',
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=louis-vuitton-07',
     material: 'Monogram',
   },
   {
@@ -793,7 +793,7 @@ export const PRODUCTS: Product[] = [
     name: 'OnTheGo GM',
     description: 'Large tote',
     price: 16500,
-    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-08',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=louis-vuitton-08',
     material: 'Giant monogram',
   },
   {
@@ -1990,7 +1990,7 @@ export const PRODUCTS: Product[] = [
     name: 'M11-P',
     description: 'Rangefinder digital',
     price: 48500,
-    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-01',
+    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-01',
     material: 'Black paint',
   },
   {
@@ -1999,7 +1999,7 @@ export const PRODUCTS: Product[] = [
     name: 'Leica Q3',
     description: 'Fixed Summilux 28mm',
     price: 32000,
-    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-02',
+    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-02',
     material: 'Black',
   },
   {
@@ -2008,7 +2008,7 @@ export const PRODUCTS: Product[] = [
     name: 'SL3',
     description: 'Mirrorless full-frame',
     price: 38000,
-    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-03',
+    image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-03',
     material: 'Black',
   },
   {
@@ -2017,7 +2017,7 @@ export const PRODUCTS: Product[] = [
     name: 'Noctilux-M 50',
     description: 'f/0.95 lens',
     price: 68000,
-    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-04',
+    image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-04',
     material: 'Black anodized',
   },
   {
@@ -2026,7 +2026,7 @@ export const PRODUCTS: Product[] = [
     name: 'Summicron-M 35',
     description: 'f/2 ASPH',
     price: 18500,
-    image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-05',
+    image: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-05',
     material: 'Silver chrome',
   },
   {
@@ -2035,7 +2035,7 @@ export const PRODUCTS: Product[] = [
     name: 'D-Lux 8',
     description: 'Compact premium',
     price: 8500,
-    image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-06',
+    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-06',
     material: 'Black',
   },
   {
@@ -2044,7 +2044,7 @@ export const PRODUCTS: Product[] = [
     name: 'SOFORT 2',
     description: 'Instant hybrid',
     price: 2800,
-    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-07',
+    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-07',
     material: 'White',
   },
   {
@@ -2053,7 +2053,7 @@ export const PRODUCTS: Product[] = [
     name: 'Leica 1',
     description: 'Heritage reissue',
     price: 12500,
-    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-08',
+    image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-08',
     material: 'Silver',
   },
   {
@@ -2062,7 +2062,7 @@ export const PRODUCTS: Product[] = [
     name: 'APO-Summicron 90',
     description: 'Portrait lens',
     price: 28000,
-    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-09',
+    image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-09',
     material: 'Black',
   },
   {
@@ -2071,7 +2071,7 @@ export const PRODUCTS: Product[] = [
     name: 'M-A Typ 127',
     description: 'Mechanical film M',
     price: 24500,
-    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-10',
+    image: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-10',
     material: 'Silver chrome',
   },
   {
