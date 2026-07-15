@@ -1,13 +1,31 @@
-import { doc, setDoc } from 'firebase/firestore'
+import {
+  collection,
+  doc,
+  getDoc,
+  getDocs,
+  increment,
+  limit,
+  orderBy,
+  query,
+  setDoc,
+  updateDoc,
+} from 'firebase/firestore'
 import type { LedgerEntry } from '../types'
 import { listPurchases } from './banking'
 import { db } from './config'
+import {
+  getPersistenceError,
+  getPersistenceStatus,
+  withFirestore,
+} from './persistence'
 import { readJson, writeJson } from './storageLocal'
-import { listLocalUsers } from './users'
+import { listLocalUsers, listRemoteUsers } from './users'
 
 const ANALYTICS_KEY = 'bankshop_analytics'
 const VISITOR_KEY = 'bankshop_visitor_id'
 const LEDGER_KEY = 'bankshop_ledger'
+const ANALYTICS_DOC = doc(db, 'analytics', 'app')
+const EVENTS = 'analytics_events'
 
 export interface AnalyticsSnapshot {
   totalVisits: number
@@ -31,6 +49,15 @@ export interface AnalyticsEvent {
   meta?: Record<string, string | number>
 }
 
+export interface AdminMetrics extends AnalyticsSnapshot {
+  liveUsers: number
+  livePurchases: number
+  liveLedgerCount: number
+  firestoreStatus: ReturnType<typeof getPersistenceStatus>
+  firestoreError: string
+  source: 'firestore' | 'local'
+}
+
 function defaultSnapshot(): AnalyticsSnapshot {
   return {
     totalVisits: 0,
@@ -47,25 +74,19 @@ function defaultSnapshot(): AnalyticsSnapshot {
   }
 }
 
-function read(): AnalyticsSnapshot {
+function readLocal(): AnalyticsSnapshot {
   return readJson<AnalyticsSnapshot>(ANALYTICS_KEY, defaultSnapshot())
 }
 
-async function write(snapshot: AnalyticsSnapshot) {
+function writeLocal(snapshot: AnalyticsSnapshot) {
   snapshot.events = snapshot.events.slice(0, 100)
   writeJson(ANALYTICS_KEY, snapshot)
-  try {
-    await setDoc(doc(db, 'analytics', 'app'), {
-      ...snapshot,
-      updatedAt: new Date().toISOString(),
-    })
-  } catch {
-    // local-first
-  }
 }
 
-function pushEvent(snapshot: AnalyticsSnapshot, event: Omit<AnalyticsEvent, 'id'>) {
-  snapshot.events.unshift({ ...event, id: crypto.randomUUID() })
+function pushEvent(snapshot: AnalyticsSnapshot, event: Omit<AnalyticsEvent, 'id'> & { id?: string }) {
+  const full: AnalyticsEvent = { ...event, id: event.id ?? crypto.randomUUID() }
+  snapshot.events.unshift(full)
+  return full
 }
 
 function getVisitorId(): string {
@@ -77,75 +98,119 @@ function getVisitorId(): string {
   return id
 }
 
+async function ensureAnalyticsDoc() {
+  const snap = await getDoc(ANALYTICS_DOC)
+  if (!snap.exists()) {
+    await setDoc(ANALYTICS_DOC, {
+      ...defaultSnapshot(),
+      visitorIds: [],
+      events: [],
+      updatedAt: new Date().toISOString(),
+    })
+  }
+}
+
+async function syncEventToFirestore(
+  event: AnalyticsEvent,
+  counters: Record<string, unknown>,
+) {
+  return withFirestore(async () => {
+    await ensureAnalyticsDoc()
+    await setDoc(doc(db, EVENTS, event.id), event)
+    await updateDoc(ANALYTICS_DOC, {
+      ...counters,
+      updatedAt: new Date().toISOString(),
+    })
+    return true
+  })
+}
+
 export async function trackVisit(): Promise<void> {
-  const snapshot = read()
+  const snapshot = readLocal()
   const visitorId = getVisitorId()
   snapshot.totalVisits += 1
   snapshot.lastVisitAt = new Date().toISOString()
+  let isNewVisitor = false
   if (!snapshot.visitorIds.includes(visitorId)) {
     snapshot.visitorIds.push(visitorId)
     snapshot.uniqueVisitors = snapshot.visitorIds.length
+    isNewVisitor = true
   }
-  pushEvent(snapshot, { type: 'visit', at: snapshot.lastVisitAt })
-  await write(snapshot)
+  const event = pushEvent(snapshot, { type: 'visit', at: snapshot.lastVisitAt })
+  writeLocal(snapshot)
+
+  await syncEventToFirestore(event, {
+    totalVisits: increment(1),
+    ...(isNewVisitor ? { uniqueVisitors: increment(1) } : {}),
+    lastVisitAt: snapshot.lastVisitAt,
+  })
 }
 
 export async function trackRegister(fullName: string): Promise<void> {
-  const snapshot = read()
+  const snapshot = readLocal()
   snapshot.registrations += 1
-  pushEvent(snapshot, {
+  const event = pushEvent(snapshot, {
     type: 'register',
     at: new Date().toISOString(),
     label: fullName,
   })
-  await write(snapshot)
+  writeLocal(snapshot)
+
+  await syncEventToFirestore(event, {
+    registrations: increment(1),
+  })
 }
 
 export async function trackPurchase(total: number, storeName: string): Promise<void> {
-  const snapshot = read()
+  const snapshot = readLocal()
   snapshot.purchases += 1
   snapshot.purchaseVolume += total
-  pushEvent(snapshot, {
+  const event = pushEvent(snapshot, {
     type: 'purchase',
     at: new Date().toISOString(),
     label: storeName,
     meta: { total },
   })
-  await write(snapshot)
+  writeLocal(snapshot)
+
+  await syncEventToFirestore(event, {
+    purchases: increment(1),
+    purchaseVolume: increment(total),
+  })
 }
 
 export async function trackTransfer(): Promise<void> {
-  const snapshot = read()
+  const snapshot = readLocal()
   snapshot.transfers += 1
-  pushEvent(snapshot, { type: 'transfer', at: new Date().toISOString() })
-  await write(snapshot)
+  const event = pushEvent(snapshot, { type: 'transfer', at: new Date().toISOString() })
+  writeLocal(snapshot)
+  await syncEventToFirestore(event, { transfers: increment(1) })
 }
 
 export async function trackPix(): Promise<void> {
-  const snapshot = read()
+  const snapshot = readLocal()
   snapshot.pixTransfers += 1
-  pushEvent(snapshot, { type: 'pix', at: new Date().toISOString() })
-  await write(snapshot)
+  const event = pushEvent(snapshot, { type: 'pix', at: new Date().toISOString() })
+  writeLocal(snapshot)
+  await syncEventToFirestore(event, { pixTransfers: increment(1) })
 }
 
 export async function trackInvest(amount: number, optionName: string): Promise<void> {
-  const snapshot = read()
+  const snapshot = readLocal()
   snapshot.investments += 1
-  pushEvent(snapshot, {
+  const event = pushEvent(snapshot, {
     type: 'invest',
     at: new Date().toISOString(),
     label: optionName,
     meta: { amount },
   })
-  await write(snapshot)
+  writeLocal(snapshot)
+  await syncEventToFirestore(event, { investments: increment(1) })
 }
 
-export function getAnalyticsSnapshot(): AnalyticsSnapshot & {
-  liveUsers: number
-  livePurchases: number
-  liveLedgerCount: number
-} {
-  const snapshot = read()
+/** Synchronous local snapshot (tests + instant paint). */
+export function getAnalyticsSnapshot(): AdminMetrics {
+  const snapshot = readLocal()
   const users = listLocalUsers()
   const purchases = users.flatMap((u) => listPurchases(u.id))
   const ledger = readJson<LedgerEntry[]>(LEDGER_KEY, [])
@@ -156,6 +221,57 @@ export function getAnalyticsSnapshot(): AnalyticsSnapshot & {
     liveUsers: users.length,
     livePurchases: purchases.length,
     liveLedgerCount: ledger.length,
+    firestoreStatus: getPersistenceStatus(),
+    firestoreError: getPersistenceError(),
+    source: 'local',
+  }
+}
+
+/** Admin: load global metrics from Firestore (all browsers / all users). */
+export async function fetchAdminMetrics(): Promise<AdminMetrics> {
+  const local = getAnalyticsSnapshot()
+
+  const remote = await withFirestore(async () => {
+    await ensureAnalyticsDoc()
+    const [aggSnap, eventsSnap, users] = await Promise.all([
+      getDoc(ANALYTICS_DOC),
+      getDocs(query(collection(db, EVENTS), orderBy('at', 'desc'), limit(40))),
+      listRemoteUsers(),
+    ])
+
+    const agg = (aggSnap.data() ?? {}) as Partial<AnalyticsSnapshot>
+    const events = eventsSnap.docs.map((d) => d.data() as AnalyticsEvent)
+    const purchases = users.flatMap((u) => listPurchases(u.id))
+    const ledger = readJson<LedgerEntry[]>(LEDGER_KEY, [])
+
+    return {
+      totalVisits: Math.max(Number(agg.totalVisits ?? 0), local.totalVisits),
+      uniqueVisitors: Math.max(Number(agg.uniqueVisitors ?? 0), local.uniqueVisitors),
+      visitorIds: Array.isArray(agg.visitorIds) ? agg.visitorIds : local.visitorIds,
+      registrations: Math.max(Number(agg.registrations ?? 0), users.length, local.registrations),
+      purchases: Math.max(Number(agg.purchases ?? 0), purchases.length, local.purchases),
+      purchaseVolume: Math.max(Number(agg.purchaseVolume ?? 0), local.purchaseVolume),
+      transfers: Math.max(Number(agg.transfers ?? 0), local.transfers),
+      pixTransfers: Math.max(Number(agg.pixTransfers ?? 0), local.pixTransfers),
+      investments: Math.max(Number(agg.investments ?? 0), local.investments),
+      lastVisitAt: (agg.lastVisitAt as string | null) ?? local.lastVisitAt,
+      events: events.length ? events : local.events,
+      liveUsers: Math.max(users.length, local.liveUsers),
+      livePurchases: Math.max(purchases.length, local.livePurchases),
+      liveLedgerCount: ledger.length,
+      firestoreStatus: 'online' as const,
+      firestoreError: '',
+      source: 'firestore' as const,
+    }
+  })
+
+  if (remote) return remote
+
+  return {
+    ...local,
+    firestoreStatus: getPersistenceStatus(),
+    firestoreError: getPersistenceError(),
+    source: 'local',
   }
 }
 

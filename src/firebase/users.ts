@@ -10,6 +10,7 @@ import {
 } from 'firebase/firestore'
 import type { UserAccount } from '../types'
 import { db } from './config'
+import { withFirestore } from './persistence'
 
 const USERS = 'users'
 const LOCAL_USERS_KEY = 'bankshop_users'
@@ -27,18 +28,37 @@ function writeLocalUsers(users: UserAccount[]) {
   localStorage.setItem(LOCAL_USERS_KEY, JSON.stringify(users))
 }
 
+function upsertLocalUser(user: UserAccount) {
+  const local = readLocalUsers()
+  const idx = local.findIndex((u) => u.id === user.id)
+  if (idx >= 0) local[idx] = user
+  else local.push(user)
+  writeLocalUsers(local)
+}
+
 export async function createUser(user: UserAccount): Promise<UserAccount> {
   const local = readLocalUsers()
   if (local.some((u) => u.email.toLowerCase() === user.email.toLowerCase())) {
     throw new Error('Este e-mail já está cadastrado.')
   }
 
+  // Always keep a local copy for offline UX.
   writeLocalUsers([...local, user])
 
-  try {
-    await setDoc(doc(db, USERS, user.id), user)
-  } catch {
-    // Firestore may be restricted; local persistence keeps the app usable.
+  const remote = await withFirestore(async () => {
+    await setDoc(doc(db, USERS, user.id), {
+      ...user,
+      email: user.email.trim().toLowerCase(),
+      syncedAt: new Date().toISOString(),
+    })
+    return true
+  })
+
+  if (!remote) {
+    // Surface why admin metrics / console may be empty.
+    console.error(
+      '[Bank Shop] Cadastro salvo só no navegador. Firestore bloqueou a gravação (rules).',
+    )
   }
 
   return user
@@ -47,43 +67,61 @@ export async function createUser(user: UserAccount): Promise<UserAccount> {
 export async function findUserByEmail(email: string): Promise<UserAccount | null> {
   const normalized = email.trim().toLowerCase()
 
-  try {
+  const remote = await withFirestore(async () => {
     const q = query(collection(db, USERS), where('email', '==', normalized))
     const snap = await getDocs(q)
-    if (!snap.empty) {
-      return snap.docs[0].data() as UserAccount
-    }
-  } catch {
-    // fall through to local
-  }
+    if (snap.empty) return null
+    const user = snap.docs[0].data() as UserAccount
+    upsertLocalUser(user)
+    return user
+  })
 
+  if (remote) return remote
   return readLocalUsers().find((u) => u.email.toLowerCase() === normalized) ?? null
 }
 
 export async function getUserById(id: string): Promise<UserAccount | null> {
-  try {
+  const remote = await withFirestore(async () => {
     const snap = await getDoc(doc(db, USERS, id))
-    if (snap.exists()) return snap.data() as UserAccount
-  } catch {
-    // fall through
-  }
+    if (!snap.exists()) return null
+    const user = snap.data() as UserAccount
+    upsertLocalUser(user)
+    return user
+  })
+
+  if (remote) return remote
   return readLocalUsers().find((u) => u.id === id) ?? null
 }
 
 export async function findUserByAccountNumber(accountNumber: string): Promise<UserAccount | null> {
   const normalized = accountNumber.trim()
-  try {
+  const remote = await withFirestore(async () => {
     const q = query(collection(db, USERS), where('accountNumber', '==', normalized))
     const snap = await getDocs(q)
-    if (!snap.empty) return snap.docs[0].data() as UserAccount
-  } catch {
-    // fall through
-  }
+    if (snap.empty) return null
+    const user = snap.docs[0].data() as UserAccount
+    upsertLocalUser(user)
+    return user
+  })
+
+  if (remote) return remote
   return readLocalUsers().find((u) => u.accountNumber === normalized) ?? null
 }
 
 export function listLocalUsers(): UserAccount[] {
   return readLocalUsers()
+}
+
+/** Loads every registered user from Firestore (for admin metrics). */
+export async function listRemoteUsers(): Promise<UserAccount[]> {
+  const remote = await withFirestore(async () => {
+    const snap = await getDocs(collection(db, USERS))
+    const users = snap.docs.map((d) => d.data() as UserAccount)
+    // merge into local cache
+    for (const user of users) upsertLocalUser(user)
+    return users
+  })
+  return remote ?? readLocalUsers()
 }
 
 export async function updateUserBalance(userId: string, balance: number): Promise<void> {
@@ -94,16 +132,21 @@ export async function updateUserBalance(userId: string, balance: number): Promis
     writeLocalUsers(local)
   }
 
-  try {
-    await updateDoc(doc(db, USERS, userId), { balance })
-  } catch {
+  await withFirestore(async () => {
     try {
-      const existing = local.find((u) => u.id === userId)
-      if (existing) await setDoc(doc(db, USERS, userId), existing)
+      await updateDoc(doc(db, USERS, userId), { balance, updatedAt: new Date().toISOString() })
     } catch {
-      // keep local only
+      const existing = local.find((u) => u.id === userId)
+      if (existing) {
+        await setDoc(doc(db, USERS, userId), {
+          ...existing,
+          balance,
+          syncedAt: new Date().toISOString(),
+        })
+      }
     }
-  }
+    return true
+  })
 }
 
 export function saveSession(userId: string) {

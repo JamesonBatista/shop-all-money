@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion'
-import { useMemo } from 'react'
+import { useEffect, useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { Button } from '../../components/ui/Button'
 import {
   clearAdminSession,
+  fetchAdminMetrics,
   getAnalyticsSnapshot,
   hasAdminSession,
+  type AdminMetrics,
   type AnalyticsEvent,
 } from '../../firebase/analytics'
 import { formatBRL } from '../../utils/currency'
@@ -45,7 +47,22 @@ function eventLabel(event: AnalyticsEvent) {
 
 export function AdminDashboard() {
   const navigate = useNavigate()
-  const stats = useMemo(() => getAnalyticsSnapshot(), [])
+  const [stats, setStats] = useState<AdminMetrics>(() => getAnalyticsSnapshot())
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    let alive = true
+    void (async () => {
+      const remote = await fetchAdminMetrics()
+      if (alive) {
+        setStats(remote)
+        setLoading(false)
+      }
+    })()
+    return () => {
+      alive = false
+    }
+  }, [])
 
   if (!hasAdminSession()) {
     return <Navigate to="/login" replace />
@@ -64,6 +81,8 @@ export function AdminDashboard() {
     { label: 'Lançamentos no ledger', value: String(stats.liveLedgerCount) },
   ]
 
+  const firestoreOk = stats.firestoreStatus === 'online' && stats.source === 'firestore'
+
   return (
     <div className="admin-page">
       <div className="admin-wrap">
@@ -74,6 +93,7 @@ export function AdminDashboard() {
             <p className="admin-sub">
               Acompanhe acessos, cadastros e atividade financeira da aplicação.
               {stats.lastVisitAt ? ` Última visita: ${formatWhen(stats.lastVisitAt)}.` : ''}
+              {loading ? ' Sincronizando com o Firestore…' : ''}
             </p>
           </div>
           <Button
@@ -86,6 +106,50 @@ export function AdminDashboard() {
             Sair do painel
           </Button>
         </header>
+
+        <div
+          className={`admin-status admin-status--${firestoreOk ? 'ok' : 'warn'}`}
+          data-testid="firestore-status"
+        >
+          {firestoreOk ? (
+            <p>
+              <strong>Firestore online.</strong> Cadastros e métricas estão vindo da coleção{' '}
+              <code>users</code> + <code>analytics</code> do projeto <code>shop-all-money</code>.
+            </p>
+          ) : (
+            <>
+              <p>
+                <strong>Firestore bloqueado ({stats.firestoreStatus}).</strong> Os cadastros e
+                métricas estão ficando só no navegador (localStorage) — por isso você não vê nada
+                no Console do Firebase.
+              </p>
+              <p>
+                Publique as rules do arquivo <code>firestore.rules</code> neste repositório:
+              </p>
+              <ol>
+                <li>
+                  Abra{' '}
+                  <a
+                    href="https://console.firebase.google.com/project/shop-all-money/firestore/rules"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Firebase Console → Firestore → Rules
+                  </a>
+                </li>
+                <li>
+                  Cole o conteúdo de <code>firestore.rules</code> e clique em <strong>Publish</strong>
+                </li>
+                <li>
+                  Ou no terminal: <code>npx firebase login && npx firebase deploy --only firestore:rules</code>
+                </li>
+              </ol>
+              {stats.firestoreError ? (
+                <p className="admin-status__error">Erro: {stats.firestoreError}</p>
+              ) : null}
+            </>
+          )}
+        </div>
 
         <section className="admin-grid">
           {cards.map((card, index) => (
