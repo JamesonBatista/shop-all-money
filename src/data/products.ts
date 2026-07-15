@@ -100,7 +100,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 11-03',
     description: 'Flyback Chronograph',
     price: 980000,
-    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-01',
     material: 'Titanium',
   },
   {
@@ -109,7 +109,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 35-03',
     description: 'Rafael Nadal Automatic',
     price: 1250000,
-    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-02',
     material: 'Quartz TPT',
   },
   {
@@ -118,7 +118,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 67-02',
     description: 'Extra Flat Automatic',
     price: 890000,
-    image: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-03',
     material: 'Carbon TPT',
   },
   {
@@ -127,7 +127,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 72-01',
     description: 'Lifestyle Chronograph',
     price: 1450000,
-    image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-04',
     material: 'Rose gold',
   },
   {
@@ -136,7 +136,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 030',
     description: 'Declutchable Rotor',
     price: 1100000,
-    image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-05',
     material: 'Titanium',
   },
   {
@@ -145,7 +145,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 055',
     description: 'Bubba Watson',
     price: 1350000,
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-06',
     material: 'NTPT Carbon',
   },
   {
@@ -154,7 +154,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 27-04',
     description: 'Tourbillon Rafael Nadal',
     price: 2800000,
-    image: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-07',
     material: 'Carbon TPT',
   },
   {
@@ -163,7 +163,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 65-01',
     description: 'Automatic Split-Seconds',
     price: 1680000,
-    image: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-08',
     material: 'Rose gold',
   },
   {
@@ -172,7 +172,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 88',
     description: 'Smartwatch Edition',
     price: 720000,
-    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-09',
     material: 'Ceramic',
   },
   {
@@ -181,7 +181,7 @@ export const PRODUCTS: Product[] = [
     name: 'RM 07-01',
     description: 'Ladies Automatic',
     price: 950000,
-    image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=richard-mille-10',
     material: 'Red gold',
   },
   {
@@ -190,7 +190,7 @@ export const PRODUCTS: Product[] = [
     name: 'Royal Oak 15500ST',
     description: 'Selfwinding steel',
     price: 185000,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-01',
     material: 'Stainless steel',
   },
   {
@@ -199,7 +199,7 @@ export const PRODUCTS: Product[] = [
     name: 'Royal Oak Offshore',
     description: 'Chronograph',
     price: 245000,
-    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1451290337906-ac938fc89bce?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-02',
     material: 'Ceramic',
   },
   {
@@ -208,7 +208,7 @@ export const PRODUCTS: Product[] = [
     name: 'Code 11.59',
     description: 'Flying Tourbillon',
     price: 420000,
-    image: 'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-03',
     material: 'Rose gold',
   },
   {
@@ -217,7 +217,7 @@ export const PRODUCTS: Product[] = [
     name: 'Royal Oak Jumbo',
     description: 'Extra-Thin 16202',
     price: 520000,
-    image: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-04',
     material: 'Yellow gold',
   },
   {
@@ -226,7 +226,7 @@ export const PRODUCTS: Product[] = [
     name: 'Royal Oak Perpetual',
     description: 'Calendar',
     price: 680000,
-    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-05',
     material: 'White gold',
   },
   {
@@ -235,7 +235,7 @@ export const PRODUCTS: Product[] = [
     name: 'Royal Oak Concept',
     description: 'GMT Tourbillon',
     price: 890000,
-    image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-06',
     material: 'Titanium',
   },
   {
@@ -244,7 +244,7 @@ export const PRODUCTS: Product[] = [
     name: 'Millenary',
     description: 'Openworked',
     price: 195000,
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-07',
     material: 'Rose gold',
   },
   {
@@ -253,7 +253,7 @@ export const PRODUCTS: Product[] = [
     name: 'Royal Oak Mini',
     description: 'Ladies quartz',
     price: 98000,
-    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-08',
     material: 'Steel / diamonds',
   },
   {
@@ -262,7 +262,7 @@ export const PRODUCTS: Product[] = [
     name: 'Offshore Diver',
     description: 'Professional diver',
     price: 165000,
-    image: 'https://images.unsplash.com/photo-1558080684-125b43aa5b13?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-09',
     material: 'Stainless steel',
   },
   {
@@ -271,7 +271,7 @@ export const PRODUCTS: Product[] = [
     name: 'Royal Oak Double Balance',
     description: 'Skeleton',
     price: 750000,
-    image: 'https://images.unsplash.com/photo-1561154464-5a0693387014?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=audemars-piguet-10',
     material: 'Platinum',
   },
   {
@@ -280,7 +280,7 @@ export const PRODUCTS: Product[] = [
     name: 'Overseas Chronograph',
     description: 'Sport elegance',
     price: 145000,
-    image: 'https://images.unsplash.com/photo-1574717024653-0ba0a2fc172d?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-01',
     material: 'Steel',
   },
   {
@@ -289,7 +289,7 @@ export const PRODUCTS: Product[] = [
     name: 'Patrimony Manual',
     description: 'Ultra-thin classic',
     price: 98000,
-    image: 'https://images.unsplash.com/photo-1583394838331-b2728657bca1?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-02',
     material: 'White gold',
   },
   {
@@ -298,7 +298,7 @@ export const PRODUCTS: Product[] = [
     name: 'Traditionnelle',
     description: 'Complete Calendar',
     price: 185000,
-    image: 'https://images.unsplash.com/photo-1593640408182-9ce70f900bba?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-03',
     material: 'Rose gold',
   },
   {
@@ -307,7 +307,7 @@ export const PRODUCTS: Product[] = [
     name: 'Historiques',
     description: 'American 1921',
     price: 165000,
-    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1451290337906-ac938fc89bce?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-04',
     material: 'Yellow gold',
   },
   {
@@ -316,7 +316,7 @@ export const PRODUCTS: Product[] = [
     name: 'Métiers d\'Art',
     description: 'Les Aérostiers',
     price: 420000,
-    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-05',
     material: 'Enamel',
   },
   {
@@ -325,7 +325,7 @@ export const PRODUCTS: Product[] = [
     name: 'Overseas Dual Time',
     description: 'Traveler\'s watch',
     price: 128000,
-    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-06',
     material: 'Steel',
   },
   {
@@ -334,7 +334,7 @@ export const PRODUCTS: Product[] = [
     name: 'Égérie Moonphase',
     description: 'Ladies complication',
     price: 155000,
-    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-07',
     material: 'Diamond bezel',
   },
   {
@@ -343,7 +343,7 @@ export const PRODUCTS: Product[] = [
     name: 'Malte Tourbillon',
     description: 'Classic tourbillon',
     price: 380000,
-    image: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-08',
     material: 'Platinum',
   },
   {
@@ -352,7 +352,7 @@ export const PRODUCTS: Product[] = [
     name: 'Harmony Chronograph',
     description: 'Cushion chronograph',
     price: 210000,
-    image: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-09',
     material: 'Rose gold',
   },
   {
@@ -361,7 +361,7 @@ export const PRODUCTS: Product[] = [
     name: 'Les Cabinotiers',
     description: 'Unique piece',
     price: 950000,
-    image: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=vacheron-10',
     material: 'Unique enamel',
   },
   {
@@ -370,7 +370,7 @@ export const PRODUCTS: Product[] = [
     name: 'Daytona 126500LN',
     description: 'Cosmograph Chronograph',
     price: 185000,
-    image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-01',
     material: 'Oystersteel',
   },
   {
@@ -379,7 +379,7 @@ export const PRODUCTS: Product[] = [
     name: 'Submariner 126610LN',
     description: 'Dive watch',
     price: 98000,
-    image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-02',
     material: 'Oystersteel',
   },
   {
@@ -388,7 +388,7 @@ export const PRODUCTS: Product[] = [
     name: 'GMT-Master II',
     description: 'Pepsi bezel',
     price: 145000,
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-03',
     material: 'Oystersteel',
   },
   {
@@ -397,7 +397,7 @@ export const PRODUCTS: Product[] = [
     name: 'Day-Date 40',
     description: 'President bracelet',
     price: 210000,
-    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-04',
     material: 'Yellow gold',
   },
   {
@@ -406,7 +406,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sky-Dweller',
     description: 'Annual calendar GMT',
     price: 195000,
-    image: 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-05',
     material: 'Rolesor',
   },
   {
@@ -415,7 +415,7 @@ export const PRODUCTS: Product[] = [
     name: 'Yacht-Master 42',
     description: 'RLX titanium',
     price: 165000,
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1451290337906-ac938fc89bce?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-06',
     material: 'RLX titanium',
   },
   {
@@ -424,7 +424,7 @@ export const PRODUCTS: Product[] = [
     name: 'Explorer II',
     description: 'Polar dial',
     price: 88000,
-    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-07',
     material: 'Oystersteel',
   },
   {
@@ -433,7 +433,7 @@ export const PRODUCTS: Product[] = [
     name: 'Datejust 41',
     description: 'Fluted bezel',
     price: 72000,
-    image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-08',
     material: 'Rolesor',
   },
   {
@@ -442,7 +442,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sea-Dweller',
     description: 'Deepsea challenge',
     price: 125000,
-    image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-09',
     material: 'Oystersteel',
   },
   {
@@ -451,7 +451,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cellini Moonphase',
     description: 'Dress complication',
     price: 98000,
-    image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-wristwatch&sig=rolex-10',
     material: 'Everose gold',
   },
   {
@@ -460,7 +460,7 @@ export const PRODUCTS: Product[] = [
     name: 'Birkin 30',
     description: 'Hand-stitched tote',
     price: 185000,
-    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=hermes-01-1',
     material: 'Togo leather',
   },
   {
@@ -469,7 +469,7 @@ export const PRODUCTS: Product[] = [
     name: 'Kelly 28',
     description: 'Structured icon',
     price: 165000,
-    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=hermes-02-1',
     material: 'Epsom leather',
   },
   {
@@ -478,7 +478,7 @@ export const PRODUCTS: Product[] = [
     name: 'Carré 90',
     description: 'Silk twill scarf',
     price: 2800,
-    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1544441892-794166f1e3be?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-scarf&sig=hermes-03',
     material: 'Silk',
   },
   {
@@ -487,16 +487,16 @@ export const PRODUCTS: Product[] = [
     name: 'Constance 24',
     description: 'Shoulder bag',
     price: 98000,
-    image: 'https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=hermes-04',
     material: 'Swift leather',
   },
   {
     id: 'hermes-05',
     storeId: 'hermes',
     name: 'Garden Party',
-    description: 'Everyday tote',
-    price: 18500,
-    image: 'https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1200&q=80',
+    description: 'Everyday luxury tote',
+    price: 42000,
+    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=hermes-05',
     material: 'Negonda',
   },
   {
@@ -505,7 +505,7 @@ export const PRODUCTS: Product[] = [
     name: 'Haut à Courroies',
     description: 'Travel bag',
     price: 125000,
-    image: 'https://images.unsplash.com/photo-1536924940846-227afb31e2a5?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=hermes-06',
     material: 'Box calf',
   },
   {
@@ -514,7 +514,7 @@ export const PRODUCTS: Product[] = [
     name: 'Chaîne d\'Ancre',
     description: 'Bracelet',
     price: 42000,
-    image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=hermes-07',
     material: 'Rose gold',
   },
   {
@@ -523,7 +523,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cape Cod',
     description: 'Dual-time watch',
     price: 38000,
-    image: 'https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=hermes-08-1',
     material: 'Steel',
   },
   {
@@ -532,7 +532,7 @@ export const PRODUCTS: Product[] = [
     name: 'Rodeo Charm',
     description: 'Bag accessory',
     price: 3200,
-    image: 'https://images.unsplash.com/photo-1558769132-9e2e0c0d0e0f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=hermes-09-1',
     material: 'Milo lambskin',
   },
   {
@@ -541,7 +541,7 @@ export const PRODUCTS: Product[] = [
     name: 'Oran Sandal',
     description: 'Iconic sandal',
     price: 4200,
-    image: 'https://picsum.photos/seed/bankshop-lux-0/1100/1400',
+    image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-shoes&sig=hermes-10',
     material: 'Calfskin',
   },
   {
@@ -550,7 +550,7 @@ export const PRODUCTS: Product[] = [
     name: 'Classic Flap Medium',
     description: 'Quilted lambskin',
     price: 68000,
-    image: 'https://picsum.photos/seed/bankshop-lux-1/1100/1400',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=chanel-01',
     material: 'Lambskin / gold',
   },
   {
@@ -559,7 +559,7 @@ export const PRODUCTS: Product[] = [
     name: 'Boy Bag',
     description: 'Chain flap',
     price: 52000,
-    image: 'https://picsum.photos/seed/bankshop-lux-2/1100/1400',
+    image: 'https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=chanel-02',
     material: 'Caviar leather',
   },
   {
@@ -568,7 +568,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tweed Jacket',
     description: 'Bouclé couture',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-3/1100/1400',
+    image: 'https://images.unsplash.com/photo-1558171813-4c088753af8f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-coat&sig=chanel-03-1',
     material: 'Tweed',
   },
   {
@@ -577,7 +577,7 @@ export const PRODUCTS: Product[] = [
     name: '2.55 Reissue',
     description: 'Aged gold hardware',
     price: 62000,
-    image: 'https://picsum.photos/seed/bankshop-lux-4/1100/1400',
+    image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=chanel-04',
     material: 'Calfskin',
   },
   {
@@ -586,7 +586,7 @@ export const PRODUCTS: Product[] = [
     name: 'Camélia Brooch',
     description: 'Signature flower',
     price: 8500,
-    image: 'https://picsum.photos/seed/bankshop-lux-5/1100/1400',
+    image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=chanel-05',
     material: 'Resin / metal',
   },
   {
@@ -595,7 +595,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ballerina Flat',
     description: 'Cap-toe ballet',
     price: 3200,
-    image: 'https://picsum.photos/seed/bankshop-lux-6/1100/1400',
+    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=chanel-06',
     material: 'Lambskin',
   },
   {
@@ -604,7 +604,7 @@ export const PRODUCTS: Product[] = [
     name: 'Gabrielle Bag',
     description: 'Hobo chain',
     price: 38000,
-    image: 'https://picsum.photos/seed/bankshop-lux-7/1100/1400',
+    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=chanel-07',
     material: 'Aged calfskin',
   },
   {
@@ -613,7 +613,7 @@ export const PRODUCTS: Product[] = [
     name: 'Première Watch',
     description: 'Octagonal case',
     price: 42000,
-    image: 'https://picsum.photos/seed/bankshop-lux-8/1100/1400',
+    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=chanel-08',
     material: 'Steel / ceramic',
   },
   {
@@ -622,7 +622,7 @@ export const PRODUCTS: Product[] = [
     name: 'CC Pearl Earrings',
     description: 'Costume jewelry',
     price: 2800,
-    image: 'https://picsum.photos/seed/bankshop-lux-9/1100/1400',
+    image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=chanel-09',
     material: 'Metal / pearl',
   },
   {
@@ -631,7 +631,7 @@ export const PRODUCTS: Product[] = [
     name: 'Deauville Tote',
     description: 'Canvas travel',
     price: 12500,
-    image: 'https://picsum.photos/seed/bankshop-lux-10/1100/1400',
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=chanel-10',
     material: 'Canvas',
   },
   {
@@ -640,7 +640,7 @@ export const PRODUCTS: Product[] = [
     name: 'Lady Dior Medium',
     description: 'Cannage lambskin',
     price: 48000,
-    image: 'https://picsum.photos/seed/bankshop-lux-11/1100/1400',
+    image: 'https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=dior-01',
     material: 'Lambskin',
   },
   {
@@ -649,7 +649,7 @@ export const PRODUCTS: Product[] = [
     name: 'Saddle Bag',
     description: 'Oblique canvas',
     price: 32000,
-    image: 'https://picsum.photos/seed/bankshop-lux-12/1100/1400',
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=dior-02',
     material: 'Canvas',
   },
   {
@@ -658,7 +658,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bar Jacket',
     description: 'New Look silhouette',
     price: 18500,
-    image: 'https://picsum.photos/seed/bankshop-lux-13/1100/1400',
+    image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-coat&sig=dior-03-1',
     material: 'Wool barathea',
   },
   {
@@ -667,7 +667,7 @@ export const PRODUCTS: Product[] = [
     name: 'Book Tote',
     description: 'Embroidered canvas',
     price: 14500,
-    image: 'https://picsum.photos/seed/bankshop-lux-14/1100/1400',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=dior-04-1',
     material: 'Canvas',
   },
   {
@@ -676,7 +676,7 @@ export const PRODUCTS: Product[] = [
     name: 'Dior Caro',
     description: 'CD clasp bag',
     price: 38000,
-    image: 'https://picsum.photos/seed/bankshop-lux-15/1100/1400',
+    image: 'https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=dior-05',
     material: 'Supple calfskin',
   },
   {
@@ -685,7 +685,7 @@ export const PRODUCTS: Product[] = [
     name: 'J\'Adior Slingback',
     description: 'Iconic heel',
     price: 5200,
-    image: 'https://picsum.photos/seed/bankshop-lux-16/1100/1400',
+    image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-shoes&sig=dior-06-1',
     material: 'Technical fabric',
   },
   {
@@ -694,7 +694,7 @@ export const PRODUCTS: Product[] = [
     name: 'Miss Dior',
     description: 'Parfum 100ml',
     price: 2800,
-    image: 'https://picsum.photos/seed/bankshop-lux-17/1100/1400',
+    image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-perfume&sig=dior-miss',
     material: 'Fragrance',
   },
   {
@@ -703,7 +703,7 @@ export const PRODUCTS: Product[] = [
     name: 'B30 Sneaker',
     description: 'Technical knit',
     price: 4800,
-    image: 'https://picsum.photos/seed/bankshop-lux-18/1100/1400',
+    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-shoes&sig=dior-08-1',
     material: 'Mesh / rubber',
   },
   {
@@ -712,7 +712,7 @@ export const PRODUCTS: Product[] = [
     name: 'Dior Oblique Scarf',
     description: 'Silk twill',
     price: 3200,
-    image: 'https://picsum.photos/seed/bankshop-lux-19/1100/1400',
+    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-scarf&sig=dior-09',
     material: 'Silk',
   },
   {
@@ -721,7 +721,7 @@ export const PRODUCTS: Product[] = [
     name: '30 Montaigne',
     description: 'Box bag',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-20/1100/1400',
+    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=dior-10',
     material: 'Box calfskin',
   },
   {
@@ -730,7 +730,7 @@ export const PRODUCTS: Product[] = [
     name: 'Speedy Bandoulière 25',
     description: 'Monogram canvas',
     price: 18500,
-    image: 'https://picsum.photos/seed/bankshop-lux-21/1100/1400',
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=louis-vuitton-01',
     material: 'Monogram canvas',
   },
   {
@@ -739,7 +739,7 @@ export const PRODUCTS: Product[] = [
     name: 'Neverfull MM',
     description: 'Everyday tote',
     price: 14500,
-    image: 'https://picsum.photos/seed/bankshop-lux-22/1100/1400',
+    image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-02',
     material: 'Monogram canvas',
   },
   {
@@ -748,7 +748,7 @@ export const PRODUCTS: Product[] = [
     name: 'Keepall Bandoulière 55',
     description: 'Travel duffel',
     price: 22000,
-    image: 'https://picsum.photos/seed/bankshop-lux-23/1100/1400',
+    image: 'https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=louis-vuitton-03',
     material: 'Monogram',
   },
   {
@@ -757,7 +757,7 @@ export const PRODUCTS: Product[] = [
     name: 'Capucines MM',
     description: 'Structured leather',
     price: 42000,
-    image: 'https://picsum.photos/seed/bankshop-lux-24/1100/1400',
+    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-04',
     material: 'Taurillon',
   },
   {
@@ -766,7 +766,7 @@ export const PRODUCTS: Product[] = [
     name: 'LV Trainer',
     description: 'Sneaker',
     price: 6800,
-    image: 'https://picsum.photos/seed/bankshop-lux-25/1100/1400',
+    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-05-1',
     material: 'Leather / canvas',
   },
   {
@@ -775,7 +775,7 @@ export const PRODUCTS: Product[] = [
     name: 'Twist MM',
     description: 'Chain bag',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-26/1100/1400',
+    image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-06-1',
     material: 'Epi leather',
   },
   {
@@ -784,7 +784,7 @@ export const PRODUCTS: Product[] = [
     name: 'Petite Malle',
     description: 'Trunk mini',
     price: 38000,
-    image: 'https://picsum.photos/seed/bankshop-lux-27/1100/1400',
+    image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-07',
     material: 'Monogram',
   },
   {
@@ -793,7 +793,7 @@ export const PRODUCTS: Product[] = [
     name: 'OnTheGo GM',
     description: 'Large tote',
     price: 16500,
-    image: 'https://picsum.photos/seed/bankshop-lux-28/1100/1400',
+    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-08',
     material: 'Giant monogram',
   },
   {
@@ -802,7 +802,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tambour Watch',
     description: 'Automatic',
     price: 45000,
-    image: 'https://picsum.photos/seed/bankshop-lux-29/1100/1400',
+    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-luxury&sig=louis-vuitton-09',
     material: 'Steel',
   },
   {
@@ -811,7 +811,7 @@ export const PRODUCTS: Product[] = [
     name: 'Soft Trunk',
     description: 'Wearable trunk',
     price: 32000,
-    image: 'https://picsum.photos/seed/bankshop-lux-30/1100/1400',
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=louis-vuitton-10',
     material: 'Monogram eclipse',
   },
   {
@@ -820,7 +820,7 @@ export const PRODUCTS: Product[] = [
     name: 'Baby Cashmere Coat',
     description: 'Single-breasted',
     price: 42000,
-    image: 'https://picsum.photos/seed/bankshop-lux-31/1100/1400',
+    image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-coat&sig=loro-piana-01-1',
     material: 'Baby Cashmere',
   },
   {
@@ -829,7 +829,7 @@ export const PRODUCTS: Product[] = [
     name: 'Open Walk Boot',
     description: 'Suede desert boot',
     price: 6800,
-    image: 'https://picsum.photos/seed/bankshop-lux-32/1100/1400',
+    image: 'https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-shoes&sig=loro-piana-02',
     material: 'Suede / cashmere',
   },
   {
@@ -838,7 +838,7 @@ export const PRODUCTS: Product[] = [
     name: 'Summer Walk',
     description: 'Loafer',
     price: 5200,
-    image: 'https://picsum.photos/seed/bankshop-lux-33/1100/1400',
+    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-cashmere&sig=loro-piana-03',
     material: 'Suede',
   },
   {
@@ -847,7 +847,7 @@ export const PRODUCTS: Product[] = [
     name: 'Piuma Cashmere',
     description: 'Crewneck knit',
     price: 8500,
-    image: 'https://picsum.photos/seed/bankshop-lux-34/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578932750294-f5075e85f44a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-cashmere&sig=loro-piana-04',
     material: 'Cashmere',
   },
   {
@@ -856,7 +856,7 @@ export const PRODUCTS: Product[] = [
     name: 'The Gift of Kings',
     description: 'Vicuña scarf',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-35/1100/1400',
+    image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-cashmere&sig=loro-piana-05',
     material: 'Vicuña',
   },
   {
@@ -865,7 +865,7 @@ export const PRODUCTS: Product[] = [
     name: 'Regatta Jacket',
     description: 'Technical outerwear',
     price: 12500,
-    image: 'https://picsum.photos/seed/bankshop-lux-36/1100/1400',
+    image: 'https://images.unsplash.com/photo-1544441892-794166f1e3be?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-coat&sig=loro-piana-06-1',
     material: 'Storm System',
   },
   {
@@ -874,7 +874,7 @@ export const PRODUCTS: Product[] = [
     name: 'Leisure Suit',
     description: 'Travel knit set',
     price: 18500,
-    image: 'https://picsum.photos/seed/bankshop-lux-37/1100/1400',
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-suit&sig=loro-piana-07-1',
     material: 'Cashmere',
   },
   {
@@ -883,7 +883,7 @@ export const PRODUCTS: Product[] = [
     name: 'My Wander Bag',
     description: 'Soft tote',
     price: 9800,
-    image: 'https://picsum.photos/seed/bankshop-lux-38/1100/1400',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-handbag&sig=loro-piana-08',
     material: 'Pebbled leather',
   },
   {
@@ -892,7 +892,7 @@ export const PRODUCTS: Product[] = [
     name: 'White Sole Sneaker',
     description: 'Low-top',
     price: 4200,
-    image: 'https://picsum.photos/seed/bankshop-lux-39/1100/1400',
+    image: 'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-shoes&sig=loro-piana-09',
     material: 'Calfskin',
   },
   {
@@ -901,7 +901,7 @@ export const PRODUCTS: Product[] = [
     name: 'Frederick Cap',
     description: 'Baseball cap',
     price: 2800,
-    image: 'https://picsum.photos/seed/bankshop-lux-40/1100/1400',
+    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=fashion-cashmere&sig=loro-piana-10',
     material: 'Cashmere',
   },
   {
@@ -910,7 +910,7 @@ export const PRODUCTS: Product[] = [
     name: 'Oceanfront Estate — Malibu',
     description: 'Private beach access',
     price: 185000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-41/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-01',
     material: '6 bedrooms',
   },
   {
@@ -919,7 +919,7 @@ export const PRODUCTS: Product[] = [
     name: 'Penthouse — Manhattan',
     description: 'Central Park views',
     price: 98000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-42/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-02',
     material: 'Floor-through',
   },
   {
@@ -928,7 +928,7 @@ export const PRODUCTS: Product[] = [
     name: 'Château — Loire Valley',
     description: 'Historic vineyard estate',
     price: 72000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-43/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-03',
     material: 'Stone / slate',
   },
   {
@@ -937,7 +937,7 @@ export const PRODUCTS: Product[] = [
     name: 'Villa — Cap Ferrat',
     description: 'Mediterranean coastline',
     price: 125000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-44/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-04',
     material: 'Sea view',
   },
   {
@@ -946,7 +946,7 @@ export const PRODUCTS: Product[] = [
     name: 'Townhouse — Knightsbridge',
     description: 'Georgian façade',
     price: 68000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-45/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-05',
     material: '5 storeys',
   },
   {
@@ -955,7 +955,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ski Chalet — Aspen',
     description: 'Mountain contemporary',
     price: 45000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-46/1100/1400',
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-06',
     material: 'Timber / glass',
   },
   {
@@ -964,7 +964,7 @@ export const PRODUCTS: Product[] = [
     name: 'Island Compound — Bahamas',
     description: 'Private cay',
     price: 210000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-47/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-07',
     material: 'Resort amenities',
   },
   {
@@ -973,7 +973,7 @@ export const PRODUCTS: Product[] = [
     name: 'Rooftop — São Paulo Jardins',
     description: 'Full-floor residence',
     price: 38000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-48/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-08',
     material: 'Glass curtain',
   },
   {
@@ -982,7 +982,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ranch — Montana',
     description: 'Working luxury ranch',
     price: 52000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-49/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-09',
     material: 'Timber',
   },
   {
@@ -991,7 +991,7 @@ export const PRODUCTS: Product[] = [
     name: 'Waterfront — Sydney Harbour',
     description: 'Direct harbour access',
     price: 89000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-50/1100/1400',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=sothebys-realty-10',
     material: 'Sandstone',
   },
   {
@@ -1000,7 +1000,7 @@ export const PRODUCTS: Product[] = [
     name: 'Palazzo — Venice',
     description: 'Canal front historic',
     price: 95000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-51/1100/1400',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-01',
     material: 'Istrian stone',
   },
   {
@@ -1009,7 +1009,7 @@ export const PRODUCTS: Product[] = [
     name: 'Manor — Cotswolds',
     description: 'Grade I listed',
     price: 42000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-52/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-02',
     material: 'Limestone',
   },
   {
@@ -1018,7 +1018,7 @@ export const PRODUCTS: Product[] = [
     name: 'Penthouse — Dubai Marina',
     description: 'Full marina panorama',
     price: 58000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-53/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-03',
     material: 'Glass',
   },
   {
@@ -1027,7 +1027,7 @@ export const PRODUCTS: Product[] = [
     name: 'Villa — Lake Como',
     description: 'Private dock',
     price: 78000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-54/1100/1400',
+    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-04',
     material: 'Stucco / fresco',
   },
   {
@@ -1036,7 +1036,7 @@ export const PRODUCTS: Product[] = [
     name: 'Townhouse — Upper East Side',
     description: 'Limestone facade',
     price: 65000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-55/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-05',
     material: 'Limestone',
   },
   {
@@ -1045,7 +1045,7 @@ export const PRODUCTS: Product[] = [
     name: 'Estate — Napa Valley',
     description: 'Winery included',
     price: 88000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-56/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-06',
     material: 'Vineyard',
   },
   {
@@ -1054,7 +1054,7 @@ export const PRODUCTS: Product[] = [
     name: 'Apartment — Paris 7e',
     description: 'Seine views',
     price: 32000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-57/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-07',
     material: 'Haussmann',
   },
   {
@@ -1063,7 +1063,7 @@ export const PRODUCTS: Product[] = [
     name: 'Compound — Mustique',
     description: 'Caribbean retreat',
     price: 110000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-58/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-08',
     material: 'Coral stone',
   },
   {
@@ -1072,7 +1072,7 @@ export const PRODUCTS: Product[] = [
     name: 'Modern — Beverly Hills',
     description: 'Architectural statement',
     price: 72000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-59/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-09',
     material: 'Concrete / glass',
   },
   {
@@ -1081,7 +1081,7 @@ export const PRODUCTS: Product[] = [
     name: 'Castle — Scotland',
     description: 'Private highland estate',
     price: 48000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-60/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=christies-realty-10',
     material: 'Granite',
   },
   {
@@ -1090,7 +1090,7 @@ export const PRODUCTS: Product[] = [
     name: 'Belgravia Square House',
     description: 'Stucco-fronted townhouse',
     price: 55000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-61/1100/1400',
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-01',
     material: 'Stucco',
   },
   {
@@ -1099,7 +1099,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mayfair Lateral Flat',
     description: 'Full-floor apartment',
     price: 28000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-62/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-02',
     material: 'Period',
   },
   {
@@ -1108,7 +1108,7 @@ export const PRODUCTS: Product[] = [
     name: 'Holland Park Villa',
     description: 'Detached with garden',
     price: 42000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-63/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-03',
     material: 'Brick',
   },
   {
@@ -1117,7 +1117,7 @@ export const PRODUCTS: Product[] = [
     name: 'Chelsea Riverside',
     description: 'Thames-facing',
     price: 38000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-64/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-04',
     material: 'Glass',
   },
   {
@@ -1126,7 +1126,7 @@ export const PRODUCTS: Product[] = [
     name: 'Notting Hill House',
     description: 'Garden square',
     price: 22000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-65/1100/1400',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-05',
     material: 'Victorian',
   },
   {
@@ -1135,7 +1135,7 @@ export const PRODUCTS: Product[] = [
     name: 'St John\'s Wood',
     description: 'Detached family home',
     price: 18500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-66/1100/1400',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-06',
     material: 'Brick',
   },
   {
@@ -1144,7 +1144,7 @@ export const PRODUCTS: Product[] = [
     name: 'Kensington Palace Gardens',
     description: 'Embassy row residence',
     price: 95000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-67/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-07',
     material: 'Stone',
   },
   {
@@ -1153,7 +1153,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hampstead Heath House',
     description: 'Heath views',
     price: 16500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-68/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-08',
     material: 'Brick',
   },
   {
@@ -1162,7 +1162,7 @@ export const PRODUCTS: Product[] = [
     name: 'City Penthouse',
     description: 'Skyline views',
     price: 12000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-69/1100/1400',
+    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-09',
     material: 'Glass',
   },
   {
@@ -1171,7 +1171,7 @@ export const PRODUCTS: Product[] = [
     name: 'Country Estate — Surrey',
     description: 'Parkland acres',
     price: 35000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-70/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=knight-frank-10',
     material: 'Brick / stone',
   },
   {
@@ -1180,7 +1180,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beach House — Ibiza',
     description: 'Cliffside villa',
     price: 28000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-71/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-01',
     material: 'Whitewashed',
   },
   {
@@ -1189,7 +1189,7 @@ export const PRODUCTS: Product[] = [
     name: 'Alpine Chalet — Gstaad',
     description: 'Ski-in residence',
     price: 32000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-72/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-02',
     material: 'Timber',
   },
   {
@@ -1198,7 +1198,7 @@ export const PRODUCTS: Product[] = [
     name: 'Townhouse — Hamburg',
     description: 'Alster waterfront',
     price: 8500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-73/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-03',
     material: 'Brick',
   },
   {
@@ -1207,7 +1207,7 @@ export const PRODUCTS: Product[] = [
     name: 'Villa — Marbella',
     description: 'Golden Mile',
     price: 18500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-74/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-04',
     material: 'Andalusian',
   },
   {
@@ -1216,7 +1216,7 @@ export const PRODUCTS: Product[] = [
     name: 'Loft — Berlin Mitte',
     description: 'Industrial conversion',
     price: 4200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-75/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-05',
     material: 'Concrete',
   },
   {
@@ -1225,7 +1225,7 @@ export const PRODUCTS: Product[] = [
     name: 'Penthouse — Lisbon',
     description: 'Tagus views',
     price: 6800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-76/1100/1400',
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-06',
     material: 'Limestone',
   },
   {
@@ -1234,7 +1234,7 @@ export const PRODUCTS: Product[] = [
     name: 'Estate — Tuscany',
     description: 'Olive grove',
     price: 14500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-77/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-07',
     material: 'Stone',
   },
   {
@@ -1243,7 +1243,7 @@ export const PRODUCTS: Product[] = [
     name: 'Apartment — Vienna',
     description: 'Ringstrasse classic',
     price: 5200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-78/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-08',
     material: 'Period',
   },
   {
@@ -1252,7 +1252,7 @@ export const PRODUCTS: Product[] = [
     name: 'Waterfront — Miami Beach',
     description: 'Art Deco renovation',
     price: 22000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-79/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-09',
     material: 'Concrete',
   },
   {
@@ -1261,7 +1261,7 @@ export const PRODUCTS: Product[] = [
     name: 'Farmhouse — Provence',
     description: 'Lavender fields',
     price: 9800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-80/1100/1400',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=engel-volkers-10',
     material: 'Stone',
   },
   {
@@ -1270,7 +1270,7 @@ export const PRODUCTS: Product[] = [
     name: 'Desert Compound — Scottsdale',
     description: 'Architect-designed',
     price: 25000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-81/1100/1400',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-01',
     material: 'Adobe / glass',
   },
   {
@@ -1279,7 +1279,7 @@ export const PRODUCTS: Product[] = [
     name: 'Lakefront — Lake Tahoe',
     description: 'Private shoreline',
     price: 32000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-82/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-02',
     material: 'Timber',
   },
   {
@@ -1288,7 +1288,7 @@ export const PRODUCTS: Product[] = [
     name: 'Urban Tower — Toronto',
     description: 'Penthouse suite',
     price: 18000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-83/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-03',
     material: 'Glass',
   },
   {
@@ -1297,7 +1297,7 @@ export const PRODUCTS: Product[] = [
     name: 'Coastal Estate — Cape Town',
     description: 'Atlantic views',
     price: 28000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-84/1100/1400',
+    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-04',
     material: 'Stone',
   },
   {
@@ -1306,7 +1306,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hacienda — Guadalajara',
     description: 'Courtyard living',
     price: 12000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-85/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-05',
     material: 'Adobe',
   },
   {
@@ -1315,7 +1315,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sky Villa — Singapore',
     description: 'Marina Bay',
     price: 45000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-86/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-06',
     material: 'Glass',
   },
   {
@@ -1324,7 +1324,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ranch — Argentina',
     description: 'Estancia lifestyle',
     price: 15000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-87/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-07',
     material: 'Timber',
   },
   {
@@ -1333,7 +1333,7 @@ export const PRODUCTS: Product[] = [
     name: 'Island Home — Fiji',
     description: 'Overwater access',
     price: 38000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-88/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-08',
     material: 'Tropical hardwood',
   },
   {
@@ -1342,7 +1342,7 @@ export const PRODUCTS: Product[] = [
     name: 'Modern — Tel Aviv',
     description: 'Seafront duplex',
     price: 14000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-89/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-09',
     material: 'Concrete',
   },
   {
@@ -1351,7 +1351,7 @@ export const PRODUCTS: Product[] = [
     name: 'Heritage — Kyoto',
     description: 'Restored machiya',
     price: 9500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-90/1100/1400',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=luxury-villa-mansion&sig=luxury-portfolio-10',
     material: 'Wood / plaster',
   },
   {
@@ -1360,7 +1360,7 @@ export const PRODUCTS: Product[] = [
     name: 'Casa Sofa',
     description: 'Modular sectional',
     price: 185000,
-    image: 'https://picsum.photos/seed/bankshop-lux-91/1100/1400',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-01',
     material: 'Cashmere upholstery',
   },
   {
@@ -1369,7 +1369,7 @@ export const PRODUCTS: Product[] = [
     name: 'Roma Dining Table',
     description: 'Marble top',
     price: 125000,
-    image: 'https://picsum.photos/seed/bankshop-lux-92/1100/1400',
+    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-02',
     material: 'Calacatta marble',
   },
   {
@@ -1378,7 +1378,7 @@ export const PRODUCTS: Product[] = [
     name: 'Selleria Armchair',
     description: 'Leather stitch detail',
     price: 68000,
-    image: 'https://picsum.photos/seed/bankshop-lux-93/1100/1400',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-03',
     material: 'Selleria leather',
   },
   {
@@ -1387,7 +1387,7 @@ export const PRODUCTS: Product[] = [
     name: 'Peekaboo Sideboard',
     description: 'Lacquered storage',
     price: 92000,
-    image: 'https://picsum.photos/seed/bankshop-lux-94/1100/1400',
+    image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-04',
     material: 'High-gloss lacquer',
   },
   {
@@ -1396,7 +1396,7 @@ export const PRODUCTS: Product[] = [
     name: 'Arch Console',
     description: 'Sculptural console',
     price: 54000,
-    image: 'https://picsum.photos/seed/bankshop-lux-95/1100/1400',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-05',
     material: 'Travertine',
   },
   {
@@ -1405,7 +1405,7 @@ export const PRODUCTS: Product[] = [
     name: 'Canasta Outdoor',
     description: 'Patio lounge',
     price: 78000,
-    image: 'https://picsum.photos/seed/bankshop-lux-96/1100/1400',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-06',
     material: 'Woven polyethylene',
   },
   {
@@ -1414,7 +1414,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mirror FF',
     description: 'Wall mirror',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-97/1100/1400',
+    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-07',
     material: 'Bronzed glass',
   },
   {
@@ -1423,7 +1423,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bed System',
     description: 'Upholstered platform',
     price: 145000,
-    image: 'https://picsum.photos/seed/bankshop-lux-98/1100/1400',
+    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-08',
     material: 'Velvet',
   },
   {
@@ -1432,7 +1432,7 @@ export const PRODUCTS: Product[] = [
     name: 'Chandelier Roma',
     description: 'Murano glass',
     price: 98000,
-    image: 'https://picsum.photos/seed/bankshop-lux-99/1100/1400',
+    image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-09',
     material: 'Murano glass',
   },
   {
@@ -1441,7 +1441,7 @@ export const PRODUCTS: Product[] = [
     name: 'Desk Atelier',
     description: 'Writing desk',
     price: 62000,
-    image: 'https://picsum.photos/seed/bankshop-lux-100/1100/1400',
+    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=fendi-casa-10',
     material: 'Walnut',
   },
   {
@@ -1450,7 +1450,7 @@ export const PRODUCTS: Product[] = [
     name: 'Freeman Seating',
     description: 'Modular sofa system',
     price: 165000,
-    image: 'https://picsum.photos/seed/bankshop-lux-101/1100/1400',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-01',
     material: 'Fabric',
   },
   {
@@ -1459,7 +1459,7 @@ export const PRODUCTS: Product[] = [
     name: 'Lawrence Sofa',
     description: 'Deep seating',
     price: 98000,
-    image: 'https://picsum.photos/seed/bankshop-lux-102/1100/1400',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-02',
     material: 'Leather',
   },
   {
@@ -1468,7 +1468,7 @@ export const PRODUCTS: Product[] = [
     name: 'Roger Coffee Table',
     description: 'Marble / metal',
     price: 42000,
-    image: 'https://picsum.photos/seed/bankshop-lux-103/1100/1400',
+    image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-03',
     material: 'Marble',
   },
   {
@@ -1477,7 +1477,7 @@ export const PRODUCTS: Product[] = [
     name: 'Yang Bed',
     description: 'Upholstered bed',
     price: 88000,
-    image: 'https://picsum.photos/seed/bankshop-lux-104/1100/1400',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-04',
     material: 'Bouclé',
   },
   {
@@ -1486,7 +1486,7 @@ export const PRODUCTS: Product[] = [
     name: 'Supermarion Dining',
     description: 'Extendable table',
     price: 72000,
-    image: 'https://picsum.photos/seed/bankshop-lux-105/1100/1400',
+    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-05',
     material: 'Wood / marble',
   },
   {
@@ -1495,7 +1495,7 @@ export const PRODUCTS: Product[] = [
     name: 'C indre Armchair',
     description: 'Lounge chair',
     price: 38000,
-    image: 'https://picsum.photos/seed/bankshop-lux-106/1100/1400',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-06',
     material: 'Leather',
   },
   {
@@ -1504,7 +1504,7 @@ export const PRODUCTS: Product[] = [
     name: 'Connell Bookcase',
     description: 'Modular shelving',
     price: 55000,
-    image: 'https://picsum.photos/seed/bankshop-lux-107/1100/1400',
+    image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-07',
     material: 'Wood',
   },
   {
@@ -1513,7 +1513,7 @@ export const PRODUCTS: Product[] = [
     name: 'Jacob Outdoor',
     description: 'Garden sofa',
     price: 68000,
-    image: 'https://picsum.photos/seed/bankshop-lux-108/1100/1400',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-08',
     material: 'Teak',
   },
   {
@@ -1522,7 +1522,7 @@ export const PRODUCTS: Product[] = [
     name: 'Aston Martin Edition',
     description: 'Collaborative seating',
     price: 210000,
-    image: 'https://picsum.photos/seed/bankshop-lux-109/1100/1400',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-09',
     material: 'Alcantara',
   },
   {
@@ -1531,7 +1531,7 @@ export const PRODUCTS: Product[] = [
     name: 'Yves Sideboard',
     description: 'Storage unit',
     price: 64000,
-    image: 'https://picsum.photos/seed/bankshop-lux-110/1100/1400',
+    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=minotti-10',
     material: 'Lacquer',
   },
   {
@@ -1540,7 +1540,7 @@ export const PRODUCTS: Product[] = [
     name: 'Camaleonda',
     description: 'Modular sofa icon',
     price: 145000,
-    image: 'https://picsum.photos/seed/bankshop-lux-111/1100/1400',
+    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-01',
     material: 'Fabric',
   },
   {
@@ -1549,7 +1549,7 @@ export const PRODUCTS: Product[] = [
     name: 'Up5_6',
     description: 'Gaetano Pesce chair',
     price: 42000,
-    image: 'https://picsum.photos/seed/bankshop-lux-112/1100/1400',
+    image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-02',
     material: 'Polyurethane',
   },
   {
@@ -1558,7 +1558,7 @@ export const PRODUCTS: Product[] = [
     name: 'Charles Sofa',
     description: 'Deep lounge',
     price: 98000,
-    image: 'https://picsum.photos/seed/bankshop-lux-113/1100/1400',
+    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-03',
     material: 'Leather',
   },
   {
@@ -1567,7 +1567,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tufty-Time',
     description: 'Modular seating',
     price: 125000,
-    image: 'https://picsum.photos/seed/bankshop-lux-114/1100/1400',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-04',
     material: 'Fabric',
   },
   {
@@ -1576,7 +1576,7 @@ export const PRODUCTS: Product[] = [
     name: 'Husk Chair',
     description: 'Armchair',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-115/1100/1400',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-05',
     material: 'Fabric / plastic',
   },
   {
@@ -1585,7 +1585,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tobi-Ishi Table',
     description: 'Dining table',
     price: 85000,
-    image: 'https://picsum.photos/seed/bankshop-lux-116/1100/1400',
+    image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-06',
     material: 'Marble',
   },
   {
@@ -1594,7 +1594,7 @@ export const PRODUCTS: Product[] = [
     name: 'Moon System',
     description: 'Sectional',
     price: 110000,
-    image: 'https://picsum.photos/seed/bankshop-lux-117/1100/1400',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-07',
     material: 'Fabric',
   },
   {
@@ -1603,7 +1603,7 @@ export const PRODUCTS: Product[] = [
     name: 'Canasta Outdoor',
     description: 'Patricia Urquiola',
     price: 72000,
-    image: 'https://picsum.photos/seed/bankshop-lux-118/1100/1400',
+    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-08',
     material: 'Polyethylene',
   },
   {
@@ -1612,7 +1612,7 @@ export const PRODUCTS: Product[] = [
     name: 'Grande Papilio',
     description: 'Butterfly chair',
     price: 32000,
-    image: 'https://picsum.photos/seed/bankshop-lux-119/1100/1400',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-09',
     material: 'Fabric',
   },
   {
@@ -1621,7 +1621,7 @@ export const PRODUCTS: Product[] = [
     name: 'Dock Sofa',
     description: 'Platform seating',
     price: 135000,
-    image: 'https://picsum.photos/seed/bankshop-lux-120/1100/1400',
+    image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=bb-italia-10',
     material: 'Leather',
   },
   {
@@ -1630,7 +1630,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bristol Sofa',
     description: 'Modular living',
     price: 88000,
-    image: 'https://picsum.photos/seed/bankshop-lux-121/1100/1400',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-01',
     material: 'Fabric',
   },
   {
@@ -1639,7 +1639,7 @@ export const PRODUCTS: Product[] = [
     name: 'Concorde Kitchen',
     description: 'Full kitchen system',
     price: 420000,
-    image: 'https://picsum.photos/seed/bankshop-lux-122/1100/1400',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-02',
     material: 'Lacquer / stone',
   },
   {
@@ -1648,7 +1648,7 @@ export const PRODUCTS: Product[] = [
     name: 'Senzafine Wardrobe',
     description: 'Walk-in system',
     price: 185000,
-    image: 'https://picsum.photos/seed/bankshop-lux-123/1100/1400',
+    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-03',
     material: 'Wood / glass',
   },
   {
@@ -1657,7 +1657,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ipanema Table',
     description: 'Dining table',
     price: 65000,
-    image: 'https://picsum.photos/seed/bankshop-lux-124/1100/1400',
+    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-04',
     material: 'Marble',
   },
   {
@@ -1666,7 +1666,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mad Chair',
     description: 'Armchair',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-125/1100/1400',
+    image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-05',
     material: 'Leather',
   },
   {
@@ -1675,7 +1675,7 @@ export const PRODUCTS: Product[] = [
     name: 'Trilogue Bookcase',
     description: 'Freestanding',
     price: 48000,
-    image: 'https://picsum.photos/seed/bankshop-lux-126/1100/1400',
+    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-06',
     material: 'Wood',
   },
   {
@@ -1684,7 +1684,7 @@ export const PRODUCTS: Product[] = [
     name: 'Saint-Germain Bed',
     description: 'Bedroom system',
     price: 95000,
-    image: 'https://picsum.photos/seed/bankshop-lux-127/1100/1400',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-07',
     material: 'Upholstery',
   },
   {
@@ -1693,7 +1693,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ventura Sideboard',
     description: 'Storage',
     price: 52000,
-    image: 'https://picsum.photos/seed/bankshop-lux-128/1100/1400',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-08',
     material: 'Wood',
   },
   {
@@ -1702,7 +1702,7 @@ export const PRODUCTS: Product[] = [
     name: 'Artex Sofa',
     description: 'Lounge',
     price: 78000,
-    image: 'https://picsum.photos/seed/bankshop-lux-129/1100/1400',
+    image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-09',
     material: 'Fabric',
   },
   {
@@ -1711,7 +1711,7 @@ export const PRODUCTS: Product[] = [
     name: 'Aleph Kitchen Island',
     description: 'Island module',
     price: 165000,
-    image: 'https://picsum.photos/seed/bankshop-lux-130/1100/1400',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=poliform-10',
     material: 'Stone',
   },
   {
@@ -1720,7 +1720,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mah Jong Sofa',
     description: 'Modular seating',
     price: 125000,
-    image: 'https://picsum.photos/seed/bankshop-lux-131/1100/1400',
+    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-01',
     material: 'Missoni fabric',
   },
   {
@@ -1729,7 +1729,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bubble Sofa',
     description: 'Sculptural lounge',
     price: 78000,
-    image: 'https://picsum.photos/seed/bankshop-lux-132/1100/1400',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-02',
     material: 'Fabric',
   },
   {
@@ -1738,7 +1738,7 @@ export const PRODUCTS: Product[] = [
     name: 'Legend Bookcase',
     description: 'Colorful shelving',
     price: 42000,
-    image: 'https://picsum.photos/seed/bankshop-lux-133/1100/1400',
+    image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-03',
     material: 'Lacquer',
   },
   {
@@ -1747,7 +1747,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ciel Dining Table',
     description: 'Glass / metal',
     price: 58000,
-    image: 'https://picsum.photos/seed/bankshop-lux-134/1100/1400',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-04',
     material: 'Glass',
   },
   {
@@ -1756,7 +1756,7 @@ export const PRODUCTS: Product[] = [
     name: 'Speed Up Bed',
     description: 'Upholstered',
     price: 68000,
-    image: 'https://picsum.photos/seed/bankshop-lux-135/1100/1400',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-05',
     material: 'Velvet',
   },
   {
@@ -1765,7 +1765,7 @@ export const PRODUCTS: Product[] = [
     name: 'Profile Sideboard',
     description: 'Storage',
     price: 45000,
-    image: 'https://picsum.photos/seed/bankshop-lux-136/1100/1400',
+    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-06',
     material: 'Wood',
   },
   {
@@ -1774,7 +1774,7 @@ export const PRODUCTS: Product[] = [
     name: 'Owl Armchair',
     description: 'Statement chair',
     price: 32000,
-    image: 'https://picsum.photos/seed/bankshop-lux-137/1100/1400',
+    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-07',
     material: 'Leather',
   },
   {
@@ -1783,7 +1783,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sala Outdoor',
     description: 'Garden set',
     price: 55000,
-    image: 'https://picsum.photos/seed/bankshop-lux-138/1100/1400',
+    image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-08',
     material: 'Teak',
   },
   {
@@ -1792,7 +1792,7 @@ export const PRODUCTS: Product[] = [
     name: 'Astrolab Console',
     description: 'Entry console',
     price: 38000,
-    image: 'https://picsum.photos/seed/bankshop-lux-139/1100/1400',
+    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-09',
     material: 'Metal / marble',
   },
   {
@@ -1801,7 +1801,7 @@ export const PRODUCTS: Product[] = [
     name: 'Crescendo Lamp',
     description: 'Floor lamp',
     price: 18000,
-    image: 'https://picsum.photos/seed/bankshop-lux-140/1100/1400',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&h=1400&q=80&theme=designer-furniture-sofa&sig=roche-bobois-10',
     material: 'Metal / fabric',
   },
   {
@@ -1810,7 +1810,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beosound A9',
     description: 'Iconic spherical wireless speaker',
     price: 12500,
-    image: 'https://picsum.photos/seed/bankshop-lux-141/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-01',
     material: 'Aluminum',
   },
   {
@@ -1819,7 +1819,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beosound Balance',
     description: 'Room-filling home speaker',
     price: 8900,
-    image: 'https://picsum.photos/seed/bankshop-lux-142/1100/1400',
+    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-02',
     material: 'Oak / aluminum',
   },
   {
@@ -1828,7 +1828,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beosound Level',
     description: 'Portable Wi-Fi speaker',
     price: 4200,
-    image: 'https://picsum.photos/seed/bankshop-lux-143/1100/1400',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-03',
     material: 'Gold tone',
   },
   {
@@ -1837,7 +1837,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beolit 20',
     description: 'Portable Bluetooth speaker',
     price: 1800,
-    image: 'https://picsum.photos/seed/bankshop-lux-144/1100/1400',
+    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-04',
     material: 'Grey mist',
   },
   {
@@ -1846,7 +1846,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beosound A5',
     description: 'Portable powerful speaker',
     price: 3200,
-    image: 'https://picsum.photos/seed/bankshop-lux-145/1100/1400',
+    image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-05',
     material: 'Dark oak',
   },
   {
@@ -1855,7 +1855,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beosound Explore',
     description: 'Rugged outdoor speaker',
     price: 890,
-    image: 'https://picsum.photos/seed/bankshop-lux-146/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-06',
     material: 'Green',
   },
   {
@@ -1864,7 +1864,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beoplay H95',
     description: 'Adaptive ANC headphones',
     price: 4500,
-    image: 'https://picsum.photos/seed/bankshop-lux-147/1100/1400',
+    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-07',
     material: 'Gold tone',
   },
   {
@@ -1873,7 +1873,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beoplay Eleven',
     description: 'Premium true wireless earbuds',
     price: 1200,
-    image: 'https://picsum.photos/seed/bankshop-lux-148/1100/1400',
+    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-08',
     material: 'Black',
   },
   {
@@ -1882,7 +1882,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beovision Harmony',
     description: 'OLED TV with oak folding doors',
     price: 18000,
-    image: 'https://picsum.photos/seed/bankshop-lux-149/1100/1400',
+    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-09',
     material: 'Oak / aluminum',
   },
   {
@@ -1891,7 +1891,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beosound Theatre',
     description: 'Soundbar for immersive cinema',
     price: 9800,
-    image: 'https://picsum.photos/seed/bankshop-lux-150/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=bang-olufsen-10',
     material: 'Natural aluminum',
   },
   {
@@ -1900,7 +1900,7 @@ export const PRODUCTS: Product[] = [
     name: 'Phantom I 108 dB',
     description: 'Wireless speaker',
     price: 14500,
-    image: 'https://picsum.photos/seed/bankshop-lux-151/1100/1400',
+    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-01',
     material: 'Gold leaf',
   },
   {
@@ -1909,7 +1909,7 @@ export const PRODUCTS: Product[] = [
     name: 'Phantom I 103 dB',
     description: 'Wireless speaker',
     price: 9800,
-    image: 'https://picsum.photos/seed/bankshop-lux-152/1100/1400',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-02',
     material: 'Matte black',
   },
   {
@@ -1918,7 +1918,7 @@ export const PRODUCTS: Product[] = [
     name: 'Phantom II 98 dB',
     description: 'Compact speaker',
     price: 5200,
-    image: 'https://picsum.photos/seed/bankshop-lux-153/1100/1400',
+    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-03',
     material: 'Iconic white',
   },
   {
@@ -1927,7 +1927,7 @@ export const PRODUCTS: Product[] = [
     name: 'Expert Pro 440',
     description: 'Integrated amplifier',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-154/1100/1400',
+    image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-04',
     material: 'Silver',
   },
   {
@@ -1936,7 +1936,7 @@ export const PRODUCTS: Product[] = [
     name: 'Gemini II',
     description: 'True wireless earbuds',
     price: 1800,
-    image: 'https://picsum.photos/seed/bankshop-lux-155/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-05',
     material: 'Matte black',
   },
   {
@@ -1945,7 +1945,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mania',
     description: 'Portable speaker',
     price: 3200,
-    image: 'https://picsum.photos/seed/bankshop-lux-156/1100/1400',
+    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-06',
     material: 'Deep black',
   },
   {
@@ -1954,7 +1954,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tree Stand',
     description: 'Phantom stand',
     price: 2200,
-    image: 'https://picsum.photos/seed/bankshop-lux-157/1100/1400',
+    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-07',
     material: 'Aluminum',
   },
   {
@@ -1963,7 +1963,7 @@ export const PRODUCTS: Product[] = [
     name: 'Reactor Base',
     description: 'Stereo dock',
     price: 2800,
-    image: 'https://picsum.photos/seed/bankshop-lux-158/1100/1400',
+    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-08',
     material: 'Aluminum',
   },
   {
@@ -1972,7 +1972,7 @@ export const PRODUCTS: Product[] = [
     name: 'Remote',
     description: 'Dialog remote',
     price: 890,
-    image: 'https://picsum.photos/seed/bankshop-lux-159/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-09',
     material: 'Aluminum',
   },
   {
@@ -1981,7 +1981,7 @@ export const PRODUCTS: Product[] = [
     name: 'Phantom Reactor 900',
     description: 'Compact powerhouse',
     price: 4500,
-    image: 'https://picsum.photos/seed/bankshop-lux-160/1100/1400',
+    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=devialet-10',
     material: 'Light chrome',
   },
   {
@@ -1990,7 +1990,7 @@ export const PRODUCTS: Product[] = [
     name: 'M11-P',
     description: 'Rangefinder digital',
     price: 48500,
-    image: 'https://picsum.photos/seed/bankshop-lux-161/1100/1400',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-01',
     material: 'Black paint',
   },
   {
@@ -1999,7 +1999,7 @@ export const PRODUCTS: Product[] = [
     name: 'Leica Q3',
     description: 'Fixed Summilux 28mm',
     price: 32000,
-    image: 'https://picsum.photos/seed/bankshop-lux-162/1100/1400',
+    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-02',
     material: 'Black',
   },
   {
@@ -2008,7 +2008,7 @@ export const PRODUCTS: Product[] = [
     name: 'SL3',
     description: 'Mirrorless full-frame',
     price: 38000,
-    image: 'https://picsum.photos/seed/bankshop-lux-163/1100/1400',
+    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-03',
     material: 'Black',
   },
   {
@@ -2017,7 +2017,7 @@ export const PRODUCTS: Product[] = [
     name: 'Noctilux-M 50',
     description: 'f/0.95 lens',
     price: 68000,
-    image: 'https://picsum.photos/seed/bankshop-lux-164/1100/1400',
+    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-04',
     material: 'Black anodized',
   },
   {
@@ -2026,7 +2026,7 @@ export const PRODUCTS: Product[] = [
     name: 'Summicron-M 35',
     description: 'f/2 ASPH',
     price: 18500,
-    image: 'https://picsum.photos/seed/bankshop-lux-165/1100/1400',
+    image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-05',
     material: 'Silver chrome',
   },
   {
@@ -2035,7 +2035,7 @@ export const PRODUCTS: Product[] = [
     name: 'D-Lux 8',
     description: 'Compact premium',
     price: 8500,
-    image: 'https://picsum.photos/seed/bankshop-lux-166/1100/1400',
+    image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-06',
     material: 'Black',
   },
   {
@@ -2044,7 +2044,7 @@ export const PRODUCTS: Product[] = [
     name: 'SOFORT 2',
     description: 'Instant hybrid',
     price: 2800,
-    image: 'https://picsum.photos/seed/bankshop-lux-167/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-07',
     material: 'White',
   },
   {
@@ -2053,7 +2053,7 @@ export const PRODUCTS: Product[] = [
     name: 'Leica 1',
     description: 'Heritage reissue',
     price: 12500,
-    image: 'https://picsum.photos/seed/bankshop-lux-168/1100/1400',
+    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-08',
     material: 'Silver',
   },
   {
@@ -2062,7 +2062,7 @@ export const PRODUCTS: Product[] = [
     name: 'APO-Summicron 90',
     description: 'Portrait lens',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-169/1100/1400',
+    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&h=1400&q=80&theme=camera-leica&sig=leica-09',
     material: 'Black',
   },
   {
@@ -2071,7 +2071,7 @@ export const PRODUCTS: Product[] = [
     name: 'M-A Typ 127',
     description: 'Mechanical film M',
     price: 24500,
-    image: 'https://picsum.photos/seed/bankshop-lux-170/1100/1400',
+    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=leica-10',
     material: 'Silver chrome',
   },
   {
@@ -2080,7 +2080,7 @@ export const PRODUCTS: Product[] = [
     name: 'MDR-Z1R',
     description: 'Flagship headphones',
     price: 12500,
-    image: 'https://picsum.photos/seed/bankshop-lux-171/1100/1400',
+    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-01',
     material: 'Leather / metal',
   },
   {
@@ -2089,7 +2089,7 @@ export const PRODUCTS: Product[] = [
     name: 'IER-Z1R',
     description: 'In-ear monitors',
     price: 9800,
-    image: 'https://picsum.photos/seed/bankshop-lux-172/1100/1400',
+    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-02',
     material: 'Magnesium',
   },
   {
@@ -2098,7 +2098,7 @@ export const PRODUCTS: Product[] = [
     name: 'DMP-Z1',
     description: 'Digital music player',
     price: 18500,
-    image: 'https://picsum.photos/seed/bankshop-lux-173/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-03',
     material: 'Aluminum',
   },
   {
@@ -2107,7 +2107,7 @@ export const PRODUCTS: Product[] = [
     name: 'TA-ZH1ES',
     description: 'Headphone amplifier',
     price: 14500,
-    image: 'https://picsum.photos/seed/bankshop-lux-174/1100/1400',
+    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-04',
     material: 'Aluminum',
   },
   {
@@ -2116,7 +2116,7 @@ export const PRODUCTS: Product[] = [
     name: 'NW-WM1ZM2',
     description: 'Walkman Signature',
     price: 16800,
-    image: 'https://picsum.photos/seed/bankshop-lux-175/1100/1400',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-05',
     material: 'Gold-plated',
   },
   {
@@ -2125,7 +2125,7 @@ export const PRODUCTS: Product[] = [
     name: 'MDR-R10',
     description: 'Collector headphones',
     price: 45000,
-    image: 'https://picsum.photos/seed/bankshop-lux-176/1100/1400',
+    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-06',
     material: 'Japanese maple',
   },
   {
@@ -2134,7 +2134,7 @@ export const PRODUCTS: Product[] = [
     name: 'IER-M9',
     description: 'Monitor earphones',
     price: 5200,
-    image: 'https://picsum.photos/seed/bankshop-lux-177/1100/1400',
+    image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-07',
     material: 'Magnesium',
   },
   {
@@ -2143,7 +2143,7 @@ export const PRODUCTS: Product[] = [
     name: 'CM-T01',
     description: 'Signature cable',
     price: 2800,
-    image: 'https://picsum.photos/seed/bankshop-lux-178/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-08',
     material: 'Silver-coated',
   },
   {
@@ -2152,7 +2152,7 @@ export const PRODUCTS: Product[] = [
     name: 'PHA-3',
     description: 'Portable amplifier',
     price: 3200,
-    image: 'https://picsum.photos/seed/bankshop-lux-179/1100/1400',
+    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-09',
     material: 'Aluminum',
   },
   {
@@ -2161,7 +2161,7 @@ export const PRODUCTS: Product[] = [
     name: 'Signature Stand',
     description: 'Headphone stand',
     price: 890,
-    image: 'https://picsum.photos/seed/bankshop-lux-180/1100/1400',
+    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=sony-signature-10',
     material: 'Wood',
   },
   {
@@ -2170,7 +2170,7 @@ export const PRODUCTS: Product[] = [
     name: 'Klimax DSM',
     description: 'Network music player',
     price: 42000,
-    image: 'https://picsum.photos/seed/bankshop-lux-181/1100/1400',
+    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-01',
     material: 'Machined aluminum',
   },
   {
@@ -2179,7 +2179,7 @@ export const PRODUCTS: Product[] = [
     name: 'Klimax Solo 800',
     description: 'Monoblock amplifier',
     price: 58000,
-    image: 'https://picsum.photos/seed/bankshop-lux-182/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-02',
     material: 'Aluminum',
   },
   {
@@ -2188,7 +2188,7 @@ export const PRODUCTS: Product[] = [
     name: 'Selekt DSM',
     description: 'Modular hub',
     price: 18500,
-    image: 'https://picsum.photos/seed/bankshop-lux-183/1100/1400',
+    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-03',
     material: 'Aluminum',
   },
   {
@@ -2197,7 +2197,7 @@ export const PRODUCTS: Product[] = [
     name: '360 Exakt Integrated',
     description: 'Loudspeaker system',
     price: 95000,
-    image: 'https://picsum.photos/seed/bankshop-lux-184/1100/1400',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-04',
     material: 'Cabinet',
   },
   {
@@ -2206,7 +2206,7 @@ export const PRODUCTS: Product[] = [
     name: 'Majik DSM',
     description: 'All-in-one streamer',
     price: 8500,
-    image: 'https://picsum.photos/seed/bankshop-lux-185/1100/1400',
+    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-05',
     material: 'Black',
   },
   {
@@ -2215,7 +2215,7 @@ export const PRODUCTS: Product[] = [
     name: 'Klimax LP12',
     description: 'Turntable',
     price: 68000,
-    image: 'https://picsum.photos/seed/bankshop-lux-186/1100/1400',
+    image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-06',
     material: 'Wood / aluminum',
   },
   {
@@ -2224,7 +2224,7 @@ export const PRODUCTS: Product[] = [
     name: 'Series 3',
     description: 'Wireless speaker',
     price: 4200,
-    image: 'https://picsum.photos/seed/bankshop-lux-187/1100/1400',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-07',
     material: 'Fabric',
   },
   {
@@ -2233,7 +2233,7 @@ export const PRODUCTS: Product[] = [
     name: 'Akurate Exaktbox',
     description: 'Digital crossover',
     price: 12500,
-    image: 'https://picsum.photos/seed/bankshop-lux-188/1100/1400',
+    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-08',
     material: 'Aluminum',
   },
   {
@@ -2242,7 +2242,7 @@ export const PRODUCTS: Product[] = [
     name: 'Kino Processor',
     description: 'AV surround',
     price: 22000,
-    image: 'https://picsum.photos/seed/bankshop-lux-189/1100/1400',
+    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-09',
     material: 'Aluminum',
   },
   {
@@ -2251,7 +2251,7 @@ export const PRODUCTS: Product[] = [
     name: 'Urika II',
     description: 'Phono stage',
     price: 9800,
-    image: 'https://picsum.photos/seed/bankshop-lux-190/1100/1400',
+    image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=hifi-speaker-headphones&sig=linn-10',
     material: 'Aluminum',
   },
   {
@@ -2260,7 +2260,7 @@ export const PRODUCTS: Product[] = [
     name: 'Butterfly Ring',
     description: 'Diamond pavé',
     price: 1850000,
-    image: 'https://picsum.photos/seed/bankshop-lux-191/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-01',
     material: 'White diamonds',
   },
   {
@@ -2269,7 +2269,7 @@ export const PRODUCTS: Product[] = [
     name: 'Peony Necklace',
     description: 'High jewelry',
     price: 4200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-192/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-02',
     material: 'Pink / white diamonds',
   },
   {
@@ -2278,7 +2278,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tribal Earrings',
     description: 'Statement drops',
     price: 980000,
-    image: 'https://picsum.photos/seed/bankshop-lux-193/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-03',
     material: 'Diamonds',
   },
   {
@@ -2287,7 +2287,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spiral Bracelet',
     description: 'Flexible diamond',
     price: 1250000,
-    image: 'https://picsum.photos/seed/bankshop-lux-194/1100/1400',
+    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-04',
     material: 'White gold',
   },
   {
@@ -2296,7 +2296,7 @@ export const PRODUCTS: Product[] = [
     name: 'Classic Emerald Cut',
     description: 'Solitaire ring',
     price: 2800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-195/1100/1400',
+    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-05',
     material: 'Diamond / platinum',
   },
   {
@@ -2305,7 +2305,7 @@ export const PRODUCTS: Product[] = [
     name: 'Wild Flower Brooch',
     description: 'Diamond sculpture',
     price: 1650000,
-    image: 'https://picsum.photos/seed/bankshop-lux-196/1100/1400',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-06',
     material: 'Yellow diamonds',
   },
   {
@@ -2314,7 +2314,7 @@ export const PRODUCTS: Product[] = [
     name: 'Dualism Pendant',
     description: 'Two-stone',
     price: 720000,
-    image: 'https://picsum.photos/seed/bankshop-lux-197/1100/1400',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-07',
     material: 'Diamonds',
   },
   {
@@ -2323,7 +2323,7 @@ export const PRODUCTS: Product[] = [
     name: 'Laurence Graff Signature',
     description: 'Icon ring',
     price: 3500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-198/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-08',
     material: 'D Flawless',
   },
   {
@@ -2332,7 +2332,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tiny Butterfly',
     description: 'Mini motif',
     price: 185000,
-    image: 'https://picsum.photos/seed/bankshop-lux-199/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-09',
     material: 'Diamonds',
   },
   {
@@ -2341,7 +2341,7 @@ export const PRODUCTS: Product[] = [
     name: 'Royal Blue Suite',
     description: 'Sapphire set',
     price: 8900000,
-    image: 'https://picsum.photos/seed/bankshop-lux-200/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=graff-10',
     material: 'Kashmir sapphire',
   },
   {
@@ -2350,7 +2350,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cluster Necklace',
     description: 'Signature cluster',
     price: 3200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-201/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-01',
     material: 'Diamonds',
   },
   {
@@ -2359,7 +2359,7 @@ export const PRODUCTS: Product[] = [
     name: 'Winston Gates',
     description: 'Bracelet',
     price: 1850000,
-    image: 'https://picsum.photos/seed/bankshop-lux-202/1100/1400',
+    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-02',
     material: 'Platinum',
   },
   {
@@ -2368,7 +2368,7 @@ export const PRODUCTS: Product[] = [
     name: 'Lily Cluster Ring',
     description: 'Engagement',
     price: 980000,
-    image: 'https://picsum.photos/seed/bankshop-lux-203/1100/1400',
+    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-03',
     material: 'Diamond',
   },
   {
@@ -2377,7 +2377,7 @@ export const PRODUCTS: Product[] = [
     name: 'Emerald Cascade',
     description: 'Earrings',
     price: 1450000,
-    image: 'https://picsum.photos/seed/bankshop-lux-204/1100/1400',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-04',
     material: 'Emerald / diamond',
   },
   {
@@ -2386,7 +2386,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ultimate Timepiece',
     description: 'High jewelry watch',
     price: 2800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-205/1100/1400',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-05',
     material: 'Diamonds',
   },
   {
@@ -2395,7 +2395,7 @@ export const PRODUCTS: Product[] = [
     name: 'New York Collection',
     description: 'Bracelet',
     price: 720000,
-    image: 'https://picsum.photos/seed/bankshop-lux-206/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-06',
     material: 'White gold',
   },
   {
@@ -2404,7 +2404,7 @@ export const PRODUCTS: Product[] = [
     name: 'Winston Charm',
     description: 'Pendant',
     price: 420000,
-    image: 'https://picsum.photos/seed/bankshop-lux-207/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-07',
     material: 'Diamonds',
   },
   {
@@ -2413,7 +2413,7 @@ export const PRODUCTS: Product[] = [
     name: 'Premier Ladies',
     description: 'Watch',
     price: 185000,
-    image: 'https://picsum.photos/seed/bankshop-lux-208/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-08',
     material: 'Steel / diamonds',
   },
   {
@@ -2422,7 +2422,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sunflower Brooch',
     description: 'Yellow diamonds',
     price: 2100000,
-    image: 'https://picsum.photos/seed/bankshop-lux-209/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-09',
     material: 'Yellow diamonds',
   },
   {
@@ -2431,7 +2431,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ocean Wonder',
     description: 'Aquamarine necklace',
     price: 1650000,
-    image: 'https://picsum.photos/seed/bankshop-lux-210/1100/1400',
+    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=harry-winston-10',
     material: 'Aquamarine',
   },
   {
@@ -2440,7 +2440,7 @@ export const PRODUCTS: Product[] = [
     name: 'Vintage Alhambra',
     description: 'Necklace 20 motifs',
     price: 185000,
-    image: 'https://picsum.photos/seed/bankshop-lux-211/1100/1400',
+    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-01',
     material: 'Yellow gold / onyx',
   },
   {
@@ -2449,7 +2449,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sweet Alhambra',
     description: 'Bracelet',
     price: 42000,
-    image: 'https://picsum.photos/seed/bankshop-lux-212/1100/1400',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-02',
     material: 'Rose gold / MOP',
   },
   {
@@ -2458,7 +2458,7 @@ export const PRODUCTS: Product[] = [
     name: 'Perlée Clovers',
     description: 'Bracelet',
     price: 68000,
-    image: 'https://picsum.photos/seed/bankshop-lux-213/1100/1400',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-03',
     material: 'Yellow gold',
   },
   {
@@ -2467,7 +2467,7 @@ export const PRODUCTS: Product[] = [
     name: 'Frivole Earrings',
     description: 'Flower studs',
     price: 98000,
-    image: 'https://picsum.photos/seed/bankshop-lux-214/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-04',
     material: 'Diamonds',
   },
   {
@@ -2476,7 +2476,7 @@ export const PRODUCTS: Product[] = [
     name: 'Lucky Spring',
     description: 'Pendant',
     price: 52000,
-    image: 'https://picsum.photos/seed/bankshop-lux-215/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-05',
     material: 'Carnelian',
   },
   {
@@ -2485,7 +2485,7 @@ export const PRODUCTS: Product[] = [
     name: 'Zodiac Médaille',
     description: 'Pendant',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-216/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-06',
     material: 'Yellow gold',
   },
   {
@@ -2494,7 +2494,7 @@ export const PRODUCTS: Product[] = [
     name: 'Poetic Complication',
     description: 'Watch',
     price: 420000,
-    image: 'https://picsum.photos/seed/bankshop-lux-217/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-07',
     material: 'White gold',
   },
   {
@@ -2503,7 +2503,7 @@ export const PRODUCTS: Product[] = [
     name: 'Snowflake Clip',
     description: 'Brooch',
     price: 185000,
-    image: 'https://picsum.photos/seed/bankshop-lux-218/1100/1400',
+    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-08',
     material: 'Diamonds',
   },
   {
@@ -2512,7 +2512,7 @@ export const PRODUCTS: Product[] = [
     name: 'Deux Papillons',
     description: 'Ring',
     price: 125000,
-    image: 'https://picsum.photos/seed/bankshop-lux-219/1100/1400',
+    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-09',
     material: 'Diamonds',
   },
   {
@@ -2521,7 +2521,7 @@ export const PRODUCTS: Product[] = [
     name: 'Rose de Noël',
     description: 'Earrings',
     price: 165000,
-    image: 'https://picsum.photos/seed/bankshop-lux-220/1100/1400',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=van-cleef-10',
     material: 'Coral / diamond',
   },
   {
@@ -2530,7 +2530,7 @@ export const PRODUCTS: Product[] = [
     name: 'Love Bracelet',
     description: 'Screw motif',
     price: 85000,
-    image: 'https://picsum.photos/seed/bankshop-lux-221/1100/1400',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-01',
     material: 'Yellow gold',
   },
   {
@@ -2539,7 +2539,7 @@ export const PRODUCTS: Product[] = [
     name: 'Juste un Clou',
     description: 'Nail bracelet',
     price: 72000,
-    image: 'https://picsum.photos/seed/bankshop-lux-222/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-02',
     material: 'Rose gold',
   },
   {
@@ -2548,7 +2548,7 @@ export const PRODUCTS: Product[] = [
     name: 'Panthère de Cartier',
     description: 'Watch',
     price: 185000,
-    image: 'https://picsum.photos/seed/bankshop-lux-223/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-03',
     material: 'Steel / diamonds',
   },
   {
@@ -2557,7 +2557,7 @@ export const PRODUCTS: Product[] = [
     name: 'Trinity Ring',
     description: 'Three-band',
     price: 28000,
-    image: 'https://picsum.photos/seed/bankshop-lux-224/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-04',
     material: 'Tri-gold',
   },
   {
@@ -2566,7 +2566,7 @@ export const PRODUCTS: Product[] = [
     name: 'Santos de Cartier',
     description: 'Watch',
     price: 98000,
-    image: 'https://picsum.photos/seed/bankshop-lux-225/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-05',
     material: 'Steel / gold',
   },
   {
@@ -2575,7 +2575,7 @@ export const PRODUCTS: Product[] = [
     name: 'Clash Unisex',
     description: 'Bracelet',
     price: 45000,
-    image: 'https://picsum.photos/seed/bankshop-lux-226/1100/1400',
+    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-06',
     material: 'Rose gold',
   },
   {
@@ -2584,7 +2584,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ballon Bleu',
     description: 'Watch 36mm',
     price: 78000,
-    image: 'https://picsum.photos/seed/bankshop-lux-227/1100/1400',
+    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-07',
     material: 'Steel',
   },
   {
@@ -2593,7 +2593,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cactus de Cartier',
     description: 'Earrings',
     price: 125000,
-    image: 'https://picsum.photos/seed/bankshop-lux-228/1100/1400',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-08',
     material: 'Diamonds',
   },
   {
@@ -2602,7 +2602,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tank Must',
     description: 'Watch',
     price: 32000,
-    image: 'https://picsum.photos/seed/bankshop-lux-229/1100/1400',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-09',
     material: 'Steel',
   },
   {
@@ -2611,7 +2611,7 @@ export const PRODUCTS: Product[] = [
     name: 'Panthère Necklace',
     description: 'High jewelry',
     price: 2800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-230/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=cartier-10',
     material: 'Onyx / diamonds',
   },
   {
@@ -2620,7 +2620,7 @@ export const PRODUCTS: Product[] = [
     name: 'Serpenti Viper',
     description: 'Bracelet',
     price: 125000,
-    image: 'https://picsum.photos/seed/bankshop-lux-231/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-01',
     material: 'Rose gold',
   },
   {
@@ -2629,7 +2629,7 @@ export const PRODUCTS: Product[] = [
     name: 'B.zero1 Rock',
     description: 'Ring',
     price: 42000,
-    image: 'https://picsum.photos/seed/bankshop-lux-232/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-02',
     material: 'Ceramic / gold',
   },
   {
@@ -2638,7 +2638,7 @@ export const PRODUCTS: Product[] = [
     name: 'Divas\' Dream',
     description: 'Necklace',
     price: 185000,
-    image: 'https://picsum.photos/seed/bankshop-lux-233/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-03',
     material: 'Mother of pearl',
   },
   {
@@ -2647,7 +2647,7 @@ export const PRODUCTS: Product[] = [
     name: 'Octo Finissimo',
     description: 'Watch',
     price: 98000,
-    image: 'https://picsum.photos/seed/bankshop-lux-234/1100/1400',
+    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-04',
     material: 'Titanium',
   },
   {
@@ -2656,7 +2656,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tubogas',
     description: 'Bracelet watch',
     price: 145000,
-    image: 'https://picsum.photos/seed/bankshop-lux-235/1100/1400',
+    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-05',
     material: 'Yellow gold',
   },
   {
@@ -2665,7 +2665,7 @@ export const PRODUCTS: Product[] = [
     name: 'Serpenti Seduttori',
     description: 'Watch',
     price: 78000,
-    image: 'https://picsum.photos/seed/bankshop-lux-236/1100/1400',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-06',
     material: 'Steel',
   },
   {
@@ -2674,7 +2674,7 @@ export const PRODUCTS: Product[] = [
     name: 'Roman Scent',
     description: 'Le Gemme perfume',
     price: 2800,
-    image: 'https://picsum.photos/seed/bankshop-lux-237/1100/1400',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-07',
     material: 'Fragrance',
   },
   {
@@ -2683,7 +2683,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cabochon Ring',
     description: 'Colored stone',
     price: 68000,
-    image: 'https://picsum.photos/seed/bankshop-lux-238/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-08',
     material: 'Gemstone',
   },
   {
@@ -2692,7 +2692,7 @@ export const PRODUCTS: Product[] = [
     name: 'B.zero1 Necklace',
     description: 'Chain',
     price: 52000,
-    image: 'https://picsum.photos/seed/bankshop-lux-239/1100/1400',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-09',
     material: 'Yellow gold',
   },
   {
@@ -2701,7 +2701,7 @@ export const PRODUCTS: Product[] = [
     name: 'High Jewelry Serpenti',
     description: 'Unique piece',
     price: 4500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-240/1100/1400',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&h=1400&q=80&theme=diamond-jewelry&sig=bulgari-10',
     material: 'Emerald eyes',
   },
   {
@@ -2710,7 +2710,7 @@ export const PRODUCTS: Product[] = [
     name: 'Chiron Super Sport',
     description: '1,600 hp hypercar',
     price: 32000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-241/1100/1400',
+    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-01',
     material: 'Carbon fiber',
   },
   {
@@ -2719,7 +2719,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tourbillon',
     description: 'V16 hybrid successor',
     price: 45000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-242/1100/1400',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-02',
     material: 'Carbon fiber',
   },
   {
@@ -2728,7 +2728,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mistral',
     description: 'Roadster ultimate',
     price: 38000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-243/1100/1400',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-03',
     material: 'Carbon fiber',
   },
   {
@@ -2737,7 +2737,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bolide',
     description: 'Track-only hypercar',
     price: 28000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-244/1100/1400',
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-04',
     material: 'Carbon fiber',
   },
   {
@@ -2746,7 +2746,7 @@ export const PRODUCTS: Product[] = [
     name: 'La Voiture Noire',
     description: 'One-off coupe',
     price: 95000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-245/1100/1400',
+    image: 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-05',
     material: 'Carbon fiber',
   },
   {
@@ -2755,7 +2755,7 @@ export const PRODUCTS: Product[] = [
     name: 'Divo',
     description: 'Coachbuilt hypercar',
     price: 42000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-246/1100/1400',
+    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-06',
     material: 'Carbon fiber',
   },
   {
@@ -2764,7 +2764,7 @@ export const PRODUCTS: Product[] = [
     name: 'Centodieci',
     description: 'EB110 homage',
     price: 48000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-247/1100/1400',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-07',
     material: 'Carbon fiber',
   },
   {
@@ -2773,7 +2773,7 @@ export const PRODUCTS: Product[] = [
     name: 'Chiron Pur Sport',
     description: 'Agile Chiron',
     price: 30000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-248/1100/1400',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-08',
     material: 'Carbon fiber',
   },
   {
@@ -2782,7 +2782,7 @@ export const PRODUCTS: Product[] = [
     name: 'W16 Mistral Black',
     description: 'Black edition',
     price: 40000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-249/1100/1400',
+    image: 'https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-09',
     material: 'Carbon fiber',
   },
   {
@@ -2791,7 +2791,7 @@ export const PRODUCTS: Product[] = [
     name: 'Baby II',
     description: 'Electric junior',
     price: 185000,
-    image: 'https://picsum.photos/seed/bankshop-lux-250/1100/1400',
+    image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=bugatti-10',
     material: 'Composite',
   },
   {
@@ -2800,7 +2800,7 @@ export const PRODUCTS: Product[] = [
     name: 'Phantom Extended',
     description: 'Flagship sedan',
     price: 8500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-251/1100/1400',
+    image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-01',
     material: 'Bespoke coachwork',
   },
   {
@@ -2809,7 +2809,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spectre',
     description: 'Electric ultra-luxury',
     price: 7200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-252/1100/1400',
+    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-02',
     material: 'Aluminum spaceframe',
   },
   {
@@ -2818,7 +2818,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ghost Black Badge',
     description: 'Sporting luxury',
     price: 5800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-253/1100/1400',
+    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-03',
     material: 'Black Badge',
   },
   {
@@ -2827,7 +2827,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cullinan',
     description: 'Luxury SUV',
     price: 6500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-254/1100/1400',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-04',
     material: 'Aluminum',
   },
   {
@@ -2836,7 +2836,7 @@ export const PRODUCTS: Product[] = [
     name: 'Boat Tail',
     description: 'Coachbuilt one-off',
     price: 85000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-255/1100/1400',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-05',
     material: 'Coachwork',
   },
   {
@@ -2845,7 +2845,7 @@ export const PRODUCTS: Product[] = [
     name: 'Dawn',
     description: 'Convertible grand tourer',
     price: 5200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-256/1100/1400',
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-06',
     material: 'Soft-top',
   },
   {
@@ -2854,7 +2854,7 @@ export const PRODUCTS: Product[] = [
     name: 'Wraith',
     description: 'Grand tourer coupe',
     price: 4800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-257/1100/1400',
+    image: 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-07',
     material: 'Carbon fiber accents',
   },
   {
@@ -2863,7 +2863,7 @@ export const PRODUCTS: Product[] = [
     name: 'Phantom Tempus',
     description: 'Celestial collection',
     price: 12000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-258/1100/1400',
+    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-08',
     material: 'Bespoke',
   },
   {
@@ -2872,7 +2872,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cullinan Black Badge',
     description: 'Dark luxury SUV',
     price: 7200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-259/1100/1400',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-09',
     material: 'Black Badge',
   },
   {
@@ -2881,7 +2881,7 @@ export const PRODUCTS: Product[] = [
     name: 'Droptail',
     description: 'Coachbuilt roadster',
     price: 95000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-260/1100/1400',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=rolls-royce-10',
     material: 'Coachwork',
   },
   {
@@ -2980,7 +2980,7 @@ export const PRODUCTS: Product[] = [
     name: 'Utopia',
     description: 'V12 hypercar',
     price: 18500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-261/1100/1400',
+    image: 'https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-01',
     material: 'Carbo-titanium',
   },
   {
@@ -2989,7 +2989,7 @@ export const PRODUCTS: Product[] = [
     name: 'Huayra BC',
     description: 'Track-focused',
     price: 16500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-262/1100/1400',
+    image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-02',
     material: 'Carbon fiber',
   },
   {
@@ -2998,7 +2998,7 @@ export const PRODUCTS: Product[] = [
     name: 'Huayra Roadster BC',
     description: 'Open hypercar',
     price: 17800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-263/1100/1400',
+    image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-03',
     material: 'Carbon fiber',
   },
   {
@@ -3007,7 +3007,7 @@ export const PRODUCTS: Product[] = [
     name: 'Zonda HP Barchetta',
     description: 'Open-top legend',
     price: 22000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-264/1100/1400',
+    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-04',
     material: 'Carbon fiber',
   },
   {
@@ -3016,7 +3016,7 @@ export const PRODUCTS: Product[] = [
     name: 'Utopia Roadster',
     description: 'Open Utopia',
     price: 19500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-265/1100/1400',
+    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-05',
     material: 'Carbo-titanium',
   },
   {
@@ -3025,7 +3025,7 @@ export const PRODUCTS: Product[] = [
     name: 'Huayra Codalunga',
     description: 'Long-tail coupe',
     price: 25000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-266/1100/1400',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-06',
     material: 'Carbon fiber',
   },
   {
@@ -3034,7 +3034,7 @@ export const PRODUCTS: Product[] = [
     name: 'Imola',
     description: 'Track special',
     price: 20000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-267/1100/1400',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-07',
     material: 'Carbon fiber',
   },
   {
@@ -3043,7 +3043,7 @@ export const PRODUCTS: Product[] = [
     name: 'Huayra R',
     description: 'Pure track',
     price: 21000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-268/1100/1400',
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-08',
     material: 'Carbon fiber',
   },
   {
@@ -3052,7 +3052,7 @@ export const PRODUCTS: Product[] = [
     name: 'Zonda Cinque',
     description: 'Limited five',
     price: 16000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-269/1100/1400',
+    image: 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-09',
     material: 'Carbon fiber',
   },
   {
@@ -3061,7 +3061,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tricolore',
     description: 'Italian flag edition',
     price: 17000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-270/1100/1400',
+    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=pagani-10',
     material: 'Carbon fiber',
   },
   {
@@ -3070,7 +3070,7 @@ export const PRODUCTS: Product[] = [
     name: 'Revuelto',
     description: 'V12 hybrid flagship',
     price: 7200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-271/1100/1400',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-01',
     material: 'Carbon fiber',
   },
   {
@@ -3079,7 +3079,7 @@ export const PRODUCTS: Product[] = [
     name: 'Huracán Tecnica',
     description: 'Rear-wheel drive',
     price: 3800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-272/1100/1400',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-02',
     material: 'Aluminum / carbon',
   },
   {
@@ -3088,7 +3088,7 @@ export const PRODUCTS: Product[] = [
     name: 'Urus Performante',
     description: 'Super SUV',
     price: 4200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-273/1100/1400',
+    image: 'https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-03',
     material: 'Carbon fiber',
   },
   {
@@ -3097,7 +3097,7 @@ export const PRODUCTS: Product[] = [
     name: 'Huracán STO',
     description: 'Track-inspired',
     price: 4500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-274/1100/1400',
+    image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-04',
     material: 'Carbon fiber',
   },
   {
@@ -3106,7 +3106,7 @@ export const PRODUCTS: Product[] = [
     name: 'Countach LPI 800-4',
     description: 'Hybrid homage',
     price: 14000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-275/1100/1400',
+    image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-05',
     material: 'Carbon fiber',
   },
   {
@@ -3115,7 +3115,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sián FKP 37',
     description: 'Hybrid limited',
     price: 16000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-276/1100/1400',
+    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-06',
     material: 'Carbon fiber',
   },
   {
@@ -3124,7 +3124,7 @@ export const PRODUCTS: Product[] = [
     name: 'Aventador SVJ',
     description: 'Ultimate Aventador',
     price: 8500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-277/1100/1400',
+    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-07',
     material: 'Carbon fiber',
   },
   {
@@ -3133,7 +3133,7 @@ export const PRODUCTS: Product[] = [
     name: 'Huracán EVO Spyder',
     description: 'Open-top V10',
     price: 3600000,
-    image: 'https://picsum.photos/seed/bankshop-lux-278/1100/1400',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-08',
     material: 'Aluminum',
   },
   {
@@ -3142,7 +3142,7 @@ export const PRODUCTS: Product[] = [
     name: 'Urus SE',
     description: 'Plug-in hybrid SUV',
     price: 4800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-279/1100/1400',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-09',
     material: 'Aluminum',
   },
   {
@@ -3151,7 +3151,7 @@ export const PRODUCTS: Product[] = [
     name: 'Temerario',
     description: 'V8 hybrid successor',
     price: 5500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-280/1100/1400',
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&h=1400&q=80&theme=supercar-luxury&sig=lamborghini-10',
     material: 'Carbon fiber',
   },
   {
@@ -3160,7 +3160,7 @@ export const PRODUCTS: Product[] = [
     name: 'Basquiat Untitled',
     description: '1982 acrylic',
     price: 85000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-281/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-01',
     material: 'Acrylic on canvas',
   },
   {
@@ -3169,7 +3169,7 @@ export const PRODUCTS: Product[] = [
     name: 'Warhol Marilyn',
     description: 'Screenprint suite',
     price: 12000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-282/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-02',
     material: 'Screenprint',
   },
   {
@@ -3178,7 +3178,7 @@ export const PRODUCTS: Product[] = [
     name: 'Rothko Color Field',
     description: '1960 oil',
     price: 65000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-283/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-03',
     material: 'Oil on canvas',
   },
   {
@@ -3187,7 +3187,7 @@ export const PRODUCTS: Product[] = [
     name: 'Koons Balloon Dog',
     description: 'Stainless sculpture',
     price: 42000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-284/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-04',
     material: 'Stainless steel',
   },
   {
@@ -3196,7 +3196,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hockney Pool',
     description: 'Acrylic landscape',
     price: 28000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-285/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-05',
     material: 'Acrylic',
   },
   {
@@ -3205,7 +3205,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bacon Portrait',
     description: 'Triptych study',
     price: 55000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-286/1100/1400',
+    image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-06',
     material: 'Oil on canvas',
   },
   {
@@ -3214,7 +3214,7 @@ export const PRODUCTS: Product[] = [
     name: 'Kusama Infinity',
     description: 'Pumpkin sculpture',
     price: 8500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-287/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-07',
     material: 'Fiberglass',
   },
   {
@@ -3223,7 +3223,7 @@ export const PRODUCTS: Product[] = [
     name: 'Picasso Femme',
     description: 'Cubist period',
     price: 72000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-288/1100/1400',
+    image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-08',
     material: 'Oil on canvas',
   },
   {
@@ -3232,7 +3232,7 @@ export const PRODUCTS: Product[] = [
     name: 'Banksy Balloon Girl',
     description: 'Street icon',
     price: 15000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-289/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-09',
     material: 'Spray on canvas',
   },
   {
@@ -3241,7 +3241,7 @@ export const PRODUCTS: Product[] = [
     name: 'Monet Nymphéas',
     description: 'Water lilies',
     price: 95000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-290/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=sothebys-10',
     material: 'Oil on canvas',
   },
   {
@@ -3250,7 +3250,7 @@ export const PRODUCTS: Product[] = [
     name: 'Van Gogh Cypresses',
     description: 'Post-impressionist',
     price: 88000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-291/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-01',
     material: 'Oil on canvas',
   },
   {
@@ -3259,7 +3259,7 @@ export const PRODUCTS: Product[] = [
     name: 'Modigliani Nude',
     description: 'Portrait',
     price: 72000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-292/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-02',
     material: 'Oil on canvas',
   },
   {
@@ -3268,7 +3268,7 @@ export const PRODUCTS: Product[] = [
     name: 'Richter Abstraktes',
     description: 'Abstract painting',
     price: 32000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-293/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-03',
     material: 'Oil on canvas',
   },
   {
@@ -3277,7 +3277,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bacon Pope',
     description: 'Screaming pope study',
     price: 48000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-294/1100/1400',
+    image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-04',
     material: 'Oil on canvas',
   },
   {
@@ -3286,7 +3286,7 @@ export const PRODUCTS: Product[] = [
     name: 'Magritte Pipe',
     description: 'Surrealist icon',
     price: 18000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-295/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-05',
     material: 'Oil on canvas',
   },
   {
@@ -3295,7 +3295,7 @@ export const PRODUCTS: Product[] = [
     name: 'Kahlo Self-Portrait',
     description: 'Mexican modernism',
     price: 55000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-296/1100/1400',
+    image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-06',
     material: 'Oil on masonite',
   },
   {
@@ -3304,7 +3304,7 @@ export const PRODUCTS: Product[] = [
     name: 'Dalí Persistence',
     description: 'Surrealist work',
     price: 25000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-297/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-07',
     material: 'Oil on canvas',
   },
   {
@@ -3313,7 +3313,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cézanne Still Life',
     description: 'Post-impressionist',
     price: 42000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-298/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-08',
     material: 'Oil on canvas',
   },
   {
@@ -3322,7 +3322,7 @@ export const PRODUCTS: Product[] = [
     name: 'Giacometti Walking Man',
     description: 'Bronze sculpture',
     price: 95000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-299/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-09',
     material: 'Bronze',
   },
   {
@@ -3331,7 +3331,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hirst Spot Painting',
     description: 'Pharmaceutical series',
     price: 8500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-300/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=christies-10',
     material: 'Household gloss',
   },
   {
@@ -3340,7 +3340,7 @@ export const PRODUCTS: Product[] = [
     name: 'Basquiat Crown',
     description: 'Neo-expressionist',
     price: 28000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-301/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-01',
     material: 'Acrylic',
   },
   {
@@ -3349,7 +3349,7 @@ export const PRODUCTS: Product[] = [
     name: 'Wool Word Painting',
     description: 'Text work',
     price: 6500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-302/1100/1400',
+    image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-02',
     material: 'Enamel on canvas',
   },
   {
@@ -3358,7 +3358,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hirst Butterfly',
     description: 'Kaleidoscope',
     price: 4200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-303/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-03',
     material: 'Butterflies / gloss',
   },
   {
@@ -3367,7 +3367,7 @@ export const PRODUCTS: Product[] = [
     name: 'Kusama Net',
     description: 'Infinity net',
     price: 9800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-304/1100/1400',
+    image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-04',
     material: 'Acrylic',
   },
   {
@@ -3376,7 +3376,7 @@ export const PRODUCTS: Product[] = [
     name: 'Condo Portrait',
     description: 'Artificial realism',
     price: 3200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-305/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-05',
     material: 'Oil on canvas',
   },
   {
@@ -3385,7 +3385,7 @@ export const PRODUCTS: Product[] = [
     name: 'Nara Girl',
     description: 'Figurative',
     price: 8500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-306/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-06',
     material: 'Acrylic',
   },
   {
@@ -3394,7 +3394,7 @@ export const PRODUCTS: Product[] = [
     name: 'KAWS Companion',
     description: 'Sculpture',
     price: 2800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-307/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-07',
     material: 'Fiberglass',
   },
   {
@@ -3403,7 +3403,7 @@ export const PRODUCTS: Product[] = [
     name: 'Murakami Flower',
     description: 'Superflat',
     price: 4500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-308/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-08',
     material: 'Acrylic',
   },
   {
@@ -3412,7 +3412,7 @@ export const PRODUCTS: Product[] = [
     name: 'Aboudia Untitled',
     description: 'Contemporary African',
     price: 1800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-309/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-09',
     material: 'Mixed media',
   },
   {
@@ -3421,7 +3421,7 @@ export const PRODUCTS: Product[] = [
     name: 'George Condo Dual',
     description: 'Psychological cubism',
     price: 5200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-310/1100/1400',
+    image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=phillips-10',
     material: 'Oil',
   },
   {
@@ -3430,7 +3430,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cy Twombly Untitled',
     description: 'Blackboard series',
     price: 45000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-311/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-01',
     material: 'Oil / crayon',
   },
   {
@@ -3439,7 +3439,7 @@ export const PRODUCTS: Product[] = [
     name: 'Richard Prince Cowboy',
     description: 'Appropriation photo',
     price: 8500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-312/1100/1400',
+    image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-02',
     material: 'Ektacolor',
   },
   {
@@ -3448,7 +3448,7 @@ export const PRODUCTS: Product[] = [
     name: 'Jeff Koons Rabbit',
     description: 'Stainless steel',
     price: 65000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-313/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-03',
     material: 'Stainless steel',
   },
   {
@@ -3457,7 +3457,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ed Ruscha OOF',
     description: 'Text painting',
     price: 12000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-314/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-04',
     material: 'Oil on canvas',
   },
   {
@@ -3466,7 +3466,7 @@ export const PRODUCTS: Product[] = [
     name: 'Takashi Murakami',
     description: 'Flower ball',
     price: 6800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-315/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-05',
     material: 'Acrylic',
   },
   {
@@ -3475,7 +3475,7 @@ export const PRODUCTS: Product[] = [
     name: 'John Currin Nude',
     description: 'Figurative oil',
     price: 9200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-316/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-06',
     material: 'Oil on canvas',
   },
   {
@@ -3484,7 +3484,7 @@ export const PRODUCTS: Product[] = [
     name: 'Urs Fischer Untitled',
     description: 'Installation piece',
     price: 4500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-317/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-07',
     material: 'Mixed media',
   },
   {
@@ -3493,7 +3493,7 @@ export const PRODUCTS: Product[] = [
     name: 'Jenny Saville Figure',
     description: 'Large-scale nude',
     price: 11000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-318/1100/1400',
+    image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-08',
     material: 'Oil on canvas',
   },
   {
@@ -3502,7 +3502,7 @@ export const PRODUCTS: Product[] = [
     name: 'Damien Hirst Dot',
     description: 'Spot painting',
     price: 3800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-319/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-09',
     material: 'Household gloss',
   },
   {
@@ -3511,7 +3511,7 @@ export const PRODUCTS: Product[] = [
     name: 'Albert Oehlen',
     description: 'Abstract',
     price: 5200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-320/1100/1400',
+    image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=gagosian-10',
     material: 'Oil on canvas',
   },
   {
@@ -3520,7 +3520,7 @@ export const PRODUCTS: Product[] = [
     name: 'Rothko Untitled',
     description: 'Color field',
     price: 38000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-321/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-01',
     material: 'Oil on canvas',
   },
   {
@@ -3529,7 +3529,7 @@ export const PRODUCTS: Product[] = [
     name: 'Agnes Martin Grid',
     description: 'Minimalist',
     price: 12000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-322/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-02',
     material: 'Acrylic / graphite',
   },
   {
@@ -3538,7 +3538,7 @@ export const PRODUCTS: Product[] = [
     name: 'James Turrell Ganzfeld',
     description: 'Light installation',
     price: 8500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-323/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578321272176-b7bbc0679853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-03',
     material: 'Light / space',
   },
   {
@@ -3547,7 +3547,7 @@ export const PRODUCTS: Product[] = [
     name: 'Lee Ufan Relatum',
     description: 'Stone and steel',
     price: 4200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-324/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-04',
     material: 'Stone / steel',
   },
   {
@@ -3556,7 +3556,7 @@ export const PRODUCTS: Product[] = [
     name: 'TeamLab Immersive',
     description: 'Digital environment',
     price: 2800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-325/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-05',
     material: 'Digital',
   },
   {
@@ -3565,7 +3565,7 @@ export const PRODUCTS: Product[] = [
     name: 'David Hockney iPad',
     description: 'Digital drawing',
     price: 3500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-326/1100/1400',
+    image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-06',
     material: 'iPad print',
   },
   {
@@ -3574,7 +3574,7 @@ export const PRODUCTS: Product[] = [
     name: 'Louise Nevelson Wall',
     description: 'Assemblage',
     price: 6800000,
-    image: 'https://picsum.photos/seed/bankshop-lux-327/1100/1400',
+    image: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-07',
     material: 'Wood / paint',
   },
   {
@@ -3583,7 +3583,7 @@ export const PRODUCTS: Product[] = [
     name: 'Alexander Calder Mobile',
     description: 'Kinetic sculpture',
     price: 15000000,
-    image: 'https://picsum.photos/seed/bankshop-lux-328/1100/1400',
+    image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-08',
     material: 'Painted metal',
   },
   {
@@ -3592,7 +3592,7 @@ export const PRODUCTS: Product[] = [
     name: 'Kiki Smith Figure',
     description: 'Bronze figure',
     price: 2200000,
-    image: 'https://picsum.photos/seed/bankshop-lux-329/1100/1400',
+    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-09',
     material: 'Bronze',
   },
   {
@@ -3601,11 +3601,11 @@ export const PRODUCTS: Product[] = [
     name: 'Yoshitomo Nara',
     description: 'Girl with knife',
     price: 9500000,
-    image: 'https://picsum.photos/seed/bankshop-lux-330/1100/1400',
+    image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=1400&q=80&theme=painting-art-gallery&sig=pace-10',
     material: 'Acrylic',
   },
 ]
 
-export function getProductsByStore(storeId: string) {
-  return PRODUCTS.filter((p) => p.storeId === storeId)
+export function getProductsByStore(storeId: string): Product[] {
+  return PRODUCTS.filter((product) => product.storeId === storeId)
 }
