@@ -40,6 +40,11 @@ export interface Product {
   image: string
 }
 
+export interface StoreCta {
+  label: string
+  style: 'solid' | 'outline' | 'pill' | 'square' | 'underline'
+}
+
 export interface Store {
   id: string
   categoryId: string
@@ -49,6 +54,7 @@ export interface Store {
   theme: StoreTheme
   logoInitials: string
   heroImage: string
+  cta: StoreCta
 }
 
 export interface StoreTheme {
@@ -83,6 +89,62 @@ export interface PurchaseRecord {
   emailStatus: 'sent' | 'queued' | 'failed'
 }
 
+export type PixKeyType = 'email' | 'cpf' | 'phone' | 'random'
+
+export interface PixKey {
+  id: string
+  userId: string
+  type: PixKeyType
+  key: string
+  createdAt: string
+}
+
+export type LedgerKind =
+  | 'pix_out'
+  | 'pix_in'
+  | 'transfer_out'
+  | 'transfer_in'
+  | 'deposit'
+  | 'purchase'
+  | 'invest'
+  | 'yield'
+  | 'refund'
+
+export interface LedgerEntry {
+  id: string
+  userId: string
+  kind: LedgerKind
+  title: string
+  description: string
+  amount: number
+  signedAmount: number
+  counterpartyName?: string
+  counterpartyAccount?: string
+  counterpartyKey?: string
+  storeName?: string
+  createdAt: string
+  meta?: Record<string, string | number | boolean>
+}
+
+export interface InvestmentOption {
+  id: string
+  name: string
+  description: string
+  dailyRate: number
+  risk: 'baixo' | 'moderado' | 'arrojado'
+}
+
+export interface InvestmentPosition {
+  id: string
+  userId: string
+  optionId: string
+  optionName: string
+  principal: number
+  accrued: number
+  createdAt: string
+  lastYieldAt: string
+}
+
 export interface BankBootstrap {
   id: string
   bankName: string
@@ -93,3 +155,6 @@ export interface BankBootstrap {
 }
 
 export const MAX_BALANCE = 100_000_000
+export const MAX_PIX_HISTORY = 20
+export const DAILY_YIELD_RATE = 0.005
+export const YIELD_INTERVAL_MS = 24 * 60 * 60 * 1000

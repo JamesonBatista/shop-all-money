@@ -143,11 +143,17 @@
 
 .bs-modal {
   width: min(460px, 100%);
+  max-height: min(88vh, 900px);
+  overflow: auto;
   background: linear-gradient(180deg, var(--bs-navy-800), var(--bs-navy-950));
   border: 1px solid rgba(201, 163, 106, 0.25);
   border-radius: 22px;
   box-shadow: var(--bs-shadow);
   padding: 1.4rem;
+}
+
+.bs-modal--lg {
+  width: min(640px, 100%);
 }
 
 .bs-modal__head {

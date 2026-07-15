@@ -4,20 +4,24 @@ import { useNavigate } from 'react-router-dom'
 import { AnimatedBackground } from '../../components/layout/AnimatedBackground'
 import { BackButton } from '../../components/ui/BackButton'
 import { Button } from '../../components/ui/Button'
+import { Modal } from '../../components/ui/Modal'
 import { useAuth } from '../../context/AuthContext'
 import { useCart } from '../../context/CartContext'
 import { getStoreById } from '../../data/stores'
 import { savePurchase } from '../../firebase/purchases'
+import { recordPurchaseLedger } from '../../services/bankingOps'
 import { sendPurchaseEmail } from '../../services/emailService'
 import type { PurchaseRecord } from '../../types'
 import { formatBRL } from '../../utils/currency'
 import './Shop.css'
 
+type PayState = 'idle' | 'waiting' | 'success' | 'error'
+
 export function CartPage() {
   const { user, debit } = useAuth()
   const { items, total, removeItem, updateQuantity, clearCart } = useCart()
   const navigate = useNavigate()
-  const [busy, setBusy] = useState(false)
+  const [payState, setPayState] = useState<PayState>('idle')
   const [message, setMessage] = useState('')
   const [error, setError] = useState('')
 
@@ -26,11 +30,18 @@ export function CartPage() {
   async function checkout() {
     if (!items.length || !user) return
     const account = user
-    setBusy(true)
     setError('')
     setMessage('')
+    setPayState('waiting')
+
+    // Intentional bank-like waiting UX
+    await new Promise((resolve) => window.setTimeout(resolve, 1200))
 
     try {
+      if (total > account.balance) {
+        throw new Error('Saldo insuficiente.')
+      }
+
       await debit(total)
 
       const primaryStore = getStoreById(items[0].storeId)
@@ -44,6 +55,7 @@ export function CartPage() {
         fontDisplay: '"Cormorant Garamond", serif',
       }
       const storeName = primaryStore?.name ?? items[0].storeName
+      const createdAt = new Date().toISOString()
 
       const emailStatus = await sendPurchaseEmail({
         to: account.email,
@@ -62,23 +74,31 @@ export function CartPage() {
         total,
         storeTheme: theme,
         storeName,
-        createdAt: new Date().toISOString(),
+        createdAt,
         emailStatus,
       }
 
       await savePurchase(record)
+      await recordPurchaseLedger({
+        userId: account.id,
+        storeName,
+        total,
+        createdAt,
+      })
       clearCart()
+      setPayState('success')
       setMessage(
         emailStatus === 'sent'
-          ? `Compra concluída! Confirmação enviada para ${account.email}.`
-          : `Compra concluída! Confirmamos o abatimento e preparamos o e-mail para ${account.email}.`,
+          ? `Compra realizada! Detalhes enviados para ${account.email}.`
+          : `Compra realizada! Confirmamos o abatimento e preparamos o e-mail para ${account.email}.`,
       )
     } catch (err) {
+      setPayState('error')
       setError(err instanceof Error ? err.message : 'Não foi possível concluir a compra.')
-    } finally {
-      setBusy(false)
     }
   }
+
+  const popupOpen = payState === 'waiting' || payState === 'success' || payState === 'error'
 
   return (
     <div className="cart-page">
@@ -95,10 +115,10 @@ export function CartPage() {
           </Button>
         </div>
 
-        {message ? <div className="success-banner">{message}</div> : null}
-        {error ? <div className="auth-alert">{error}</div> : null}
+        {message && payState !== 'success' ? <div className="success-banner">{message}</div> : null}
+        {error && payState !== 'error' ? <div className="auth-alert">{error}</div> : null}
 
-        {!items.length && !message ? (
+        {!items.length && payState !== 'success' ? (
           <div className="cart-empty">
             <p>Seu carrinho está vazio.</p>
             <Button variant="gold" onClick={() => navigate('/loja')}>
@@ -155,8 +175,8 @@ export function CartPage() {
               <span>{formatBRL(total)}</span>
             </div>
             <div style={{ display: 'flex', gap: '0.7rem', flexWrap: 'wrap' }}>
-              <Button variant="gold" onClick={checkout} disabled={busy}>
-                {busy ? 'Processando…' : 'Finalizar compra'}
+              <Button variant="gold" onClick={checkout} disabled={payState === 'waiting'}>
+                Pagar agora
               </Button>
               <Button variant="ghost" onClick={() => navigate('/loja')}>
                 Continuar comprando
@@ -165,9 +185,15 @@ export function CartPage() {
           </div>
         ) : null}
 
-        {message ? (
+        {payState === 'success' ? (
           <div style={{ display: 'flex', gap: '0.7rem', flexWrap: 'wrap' }}>
-            <Button variant="gold" onClick={() => navigate('/banco')}>
+            <Button
+              variant="gold"
+              onClick={() => {
+                setPayState('idle')
+                navigate('/banco')
+              }}
+            >
               Ver saldo atualizado
             </Button>
             <Button variant="secondary" onClick={() => navigate('/loja')}>
@@ -176,6 +202,52 @@ export function CartPage() {
           </div>
         ) : null}
       </div>
+
+      <Modal
+        open={popupOpen}
+        title="Bank Shop Pay"
+        onClose={() => {
+          if (payState === 'waiting') return
+          setPayState('idle')
+          if (payState === 'error') setError('')
+        }}
+      >
+        <div className="pay-popup" data-testid="pay-popup">
+          {payState === 'waiting' ? (
+            <>
+              <div className="pay-popup__spinner" aria-hidden="true" />
+              <p data-testid="pay-waiting">Aguardando Bank Shop...</p>
+            </>
+          ) : null}
+          {payState === 'success' ? (
+            <>
+              <p className="pay-popup__success" data-testid="pay-success">
+                Compra realizada
+              </p>
+              <p>{message}</p>
+              <Button
+                variant="gold"
+                onClick={() => {
+                  setPayState('idle')
+                  navigate('/banco')
+                }}
+              >
+                Ir ao banco
+              </Button>
+            </>
+          ) : null}
+          {payState === 'error' ? (
+            <>
+              <p className="auth-alert" role="alert">
+                {error}
+              </p>
+              <Button variant="ghost" onClick={() => setPayState('idle')}>
+                Fechar
+              </Button>
+            </>
+          ) : null}
+        </div>
+      </Modal>
     </div>
   )
 }

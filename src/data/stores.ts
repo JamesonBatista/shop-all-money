@@ -10,7 +10,11 @@ export const STORES: Store[] = [
     description: 'Excelência suíça em cronometragem desde 1905.',
     logoInitials: 'RX',
     heroImage:
-      'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0b?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Reservar peça',
+      style: 'solid',
+    },
     theme: {
       primary: '#006039',
       secondary: '#a37e2c',
@@ -31,6 +35,10 @@ export const STORES: Store[] = [
     logoInitials: 'PP',
     heroImage:
       'https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Adquirir legado',
+      style: 'outline',
+    },
     theme: {
       primary: '#1a2744',
       secondary: '#8b7355',
@@ -50,6 +58,10 @@ export const STORES: Store[] = [
     logoInitials: 'AP',
     heroImage:
       'https://images.unsplash.com/photo-1622434641406-a158123450f9?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Levar Royal Oak',
+      style: 'square',
+    },
     theme: {
       primary: '#1c1c1c',
       secondary: '#6e6e6e',
@@ -69,6 +81,10 @@ export const STORES: Store[] = [
     logoInitials: 'Ω',
     heroImage:
       'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Comprar agora',
+      style: 'pill',
+    },
     theme: {
       primary: '#003366',
       secondary: '#c0a062',
@@ -88,6 +104,10 @@ export const STORES: Store[] = [
     logoInitials: 'CT',
     heroImage:
       'https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Selecionar joia',
+      style: 'underline',
+    },
     theme: {
       primary: '#8b1e1e',
       secondary: '#1a1a1a',
@@ -109,6 +129,10 @@ export const STORES: Store[] = [
     logoInitials: 'AN',
     heroImage:
       'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Encomendar',
+      style: 'square',
+    },
     theme: {
       primary: '#111111',
       secondary: '#3d3d3d',
@@ -128,6 +152,10 @@ export const STORES: Store[] = [
     logoInitials: 'MV',
     heroImage:
       'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Adicionar look',
+      style: 'pill',
+    },
     theme: {
       primary: '#1f3d2f',
       secondary: '#6b8f71',
@@ -147,6 +175,10 @@ export const STORES: Store[] = [
     logoInitials: 'LL',
     heroImage:
       'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Levar peça',
+      style: 'solid',
+    },
     theme: {
       primary: '#2c1810',
       secondary: '#8b5a3c',
@@ -168,6 +200,10 @@ export const STORES: Store[] = [
     logoInitials: 'HE',
     heroImage:
       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Agendar visita',
+      style: 'outline',
+    },
     theme: {
       primary: '#1e3a5f',
       secondary: '#5a7a9a',
@@ -187,6 +223,10 @@ export const STORES: Store[] = [
     logoInitials: 'VP',
     heroImage:
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Reservar imóvel',
+      style: 'solid',
+    },
     theme: {
       primary: '#2a2520',
       secondary: '#8a7355',
@@ -208,6 +248,10 @@ export const STORES: Store[] = [
     logoInitials: 'SF',
     heroImage:
       'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Comprar design',
+      style: 'pill',
+    },
     theme: {
       primary: '#3e2723',
       secondary: '#8d6e63',
@@ -227,6 +271,10 @@ export const STORES: Store[] = [
     logoInitials: 'CO',
     heroImage:
       'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Levar para casa',
+      style: 'underline',
+    },
     theme: {
       primary: '#2d3436',
       secondary: '#636e72',
@@ -248,6 +296,10 @@ export const STORES: Store[] = [
     logoInitials: 'AT',
     heroImage:
       'https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Adicionar ao kit',
+      style: 'square',
+    },
     theme: {
       primary: '#0b3d91',
       secondary: '#1e88e5',
@@ -266,7 +318,11 @@ export const STORES: Store[] = [
     description: 'Lançamentos exclusivos e edições limitadas.',
     logoInitials: 'ND',
     heroImage:
-      'https://images.unsplash.com/photo-1525547715591-3bfbaff0d4d4?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Comprar tech',
+      style: 'pill',
+    },
     theme: {
       primary: '#1a237e',
       secondary: '#3949ab',
@@ -288,6 +344,10 @@ export const STORES: Store[] = [
     logoInitials: 'AB',
     heroImage:
       'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Reservar joia',
+      style: 'outline',
+    },
     theme: {
       primary: '#4a1942',
       secondary: '#9b4d7a',
@@ -307,6 +367,10 @@ export const STORES: Store[] = [
     logoInitials: 'OR',
     heroImage:
       'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Comprar em ouro',
+      style: 'solid',
+    },
     theme: {
       primary: '#5c3d1e',
       secondary: '#c9a227',
@@ -328,6 +392,10 @@ export const STORES: Store[] = [
     logoInitials: 'VG',
     heroImage:
       'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Reservar veículo',
+      style: 'square',
+    },
     theme: {
       primary: '#b71c1c',
       secondary: '#212121',
@@ -347,6 +415,10 @@ export const STORES: Store[] = [
     logoInitials: 'GT',
     heroImage:
       'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Solicitar proposta',
+      style: 'outline',
+    },
     theme: {
       primary: '#263238',
       secondary: '#546e7a',
@@ -368,6 +440,10 @@ export const STORES: Store[] = [
     logoInitials: 'GN',
     heroImage:
       'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Adquirir obra',
+      style: 'underline',
+    },
     theme: {
       primary: '#1b3a4b',
       secondary: '#3d6b7a',
@@ -386,7 +462,11 @@ export const STORES: Store[] = [
     description: 'Pinturas originais e esculturas selecionadas.',
     logoInitials: 'AC',
     heroImage:
-      'https://images.unsplash.com/photo-1561214115-f2f94176d962?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1400&q=80',
+    cta: {
+      label: 'Encomendar arte',
+      style: 'pill',
+    },
     theme: {
       primary: '#3e2723',
       secondary: '#a1887f',

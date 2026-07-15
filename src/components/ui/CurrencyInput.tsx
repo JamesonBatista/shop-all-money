@@ -1,3 +1,4 @@
+import { useId } from 'react'
 import { formatCurrencyInput, parseCurrencyInput } from '../../utils/currency'
 import './ui.css'
 
@@ -16,11 +17,12 @@ export function CurrencyInput({
   error,
   placeholder = 'R$ 0,00',
 }: CurrencyInputProps) {
+  const id = useId()
   return (
-    <label className="bs-field" htmlFor="currency-credit">
+    <label className="bs-field" htmlFor={id}>
       <span className="bs-field__label">{label}</span>
       <input
-        id="currency-credit"
+        id={id}
         className={`bs-field__input ${error ? 'is-error' : ''}`}
         inputMode="numeric"
         placeholder={placeholder}

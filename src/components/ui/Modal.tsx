@@ -7,9 +7,10 @@ interface ModalProps {
   title: string
   onClose: () => void
   children: ReactNode
+  size?: 'md' | 'lg'
 }
 
-export function Modal({ open, title, onClose, children }: ModalProps) {
+export function Modal({ open, title, onClose, children, size = 'md' }: ModalProps) {
   return (
     <AnimatePresence>
       {open ? (
@@ -21,7 +22,7 @@ export function Modal({ open, title, onClose, children }: ModalProps) {
           onClick={onClose}
         >
           <motion.div
-            className="bs-modal"
+            className={`bs-modal bs-modal--${size}`}
             role="dialog"
             aria-modal="true"
             aria-labelledby="modal-title"

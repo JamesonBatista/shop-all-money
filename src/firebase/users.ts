@@ -70,6 +70,22 @@ export async function getUserById(id: string): Promise<UserAccount | null> {
   return readLocalUsers().find((u) => u.id === id) ?? null
 }
 
+export async function findUserByAccountNumber(accountNumber: string): Promise<UserAccount | null> {
+  const normalized = accountNumber.trim()
+  try {
+    const q = query(collection(db, USERS), where('accountNumber', '==', normalized))
+    const snap = await getDocs(q)
+    if (!snap.empty) return snap.docs[0].data() as UserAccount
+  } catch {
+    // fall through
+  }
+  return readLocalUsers().find((u) => u.accountNumber === normalized) ?? null
+}
+
+export function listLocalUsers(): UserAccount[] {
+  return readLocalUsers()
+}
+
 export async function updateUserBalance(userId: string, balance: number): Promise<void> {
   const local = readLocalUsers()
   const idx = local.findIndex((u) => u.id === userId)

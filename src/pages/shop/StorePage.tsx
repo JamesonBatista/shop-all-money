@@ -22,6 +22,7 @@ export function StorePage() {
   }
 
   const theme = store.theme
+  const cta = store.cta
 
   return (
     <div
@@ -33,6 +34,7 @@ export function StorePage() {
           '--store-surface': theme.surface,
           '--store-accent': theme.accent,
           '--store-primary': theme.primary,
+          '--store-secondary': theme.secondary,
           '--store-font': theme.fontDisplay,
           '--store-pattern': theme.pattern || 'none',
           '--store-hero': `url(${store.heroImage})`,
@@ -58,7 +60,7 @@ export function StorePage() {
           <BackButton to={`/loja/${categoryId}`} label="Voltar às lojas" />
           <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
             <Button variant="secondary" onClick={() => navigate('/carrinho')}>
-              Carrinho ({count})
+              Sacola ({count})
             </Button>
             <Button variant="ghost" onClick={() => navigate('/banco')}>
               Banco
@@ -75,7 +77,7 @@ export function StorePage() {
               className="product-card"
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
+              transition={{ delay: Math.min(index * 0.03, 0.3) }}
             >
               <div
                 className="product-card__media"
@@ -86,16 +88,18 @@ export function StorePage() {
                 <p>{product.description}</p>
                 <div className="product-card__row">
                   <span className="product-card__price">{formatBRL(product.price)}</span>
-                  <Button
-                    variant="gold"
+                  <button
+                    type="button"
+                    className={`store-cta store-cta--${cta.style}`}
+                    data-testid={`buy-${product.id}`}
                     onClick={() => {
                       addItem(product, store)
-                      setFlash(`${product.name} adicionado ao carrinho.`)
+                      setFlash(`${product.name} adicionado à sacola.`)
                       window.setTimeout(() => setFlash(''), 2200)
                     }}
                   >
-                    Comprar
-                  </Button>
+                    {cta.label}
+                  </button>
                 </div>
               </div>
             </motion.article>
