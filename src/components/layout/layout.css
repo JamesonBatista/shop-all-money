@@ -1,0 +1,58 @@
+.bs-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bs-bg__gradient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(31, 111, 106, 0.35), transparent 55%),
+    radial-gradient(900px 500px at 90% 0%, rgba(201, 163, 106, 0.18), transparent 50%),
+    linear-gradient(160deg, #06101c 0%, #0a1a2e 45%, #10243c 100%);
+}
+
+.bs-bg__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.55;
+}
+
+.bs-bg__orb--a {
+  width: 340px;
+  height: 340px;
+  top: 12%;
+  left: 8%;
+  background: rgba(58, 163, 155, 0.35);
+}
+
+.bs-bg__orb--b {
+  width: 420px;
+  height: 420px;
+  right: -5%;
+  bottom: 5%;
+  background: rgba(201, 163, 106, 0.22);
+}
+
+.bs-bg__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+}
+
+.bs-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: var(--bs-display);
+  font-size: 1.6rem;
+  color: var(--bs-gold-soft);
+}

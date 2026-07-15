@@ -1,0 +1,21 @@
+:root {
+  --bs-navy-950: #06101c;
+  --bs-navy-900: #0a1a2e;
+  --bs-navy-800: #12263f;
+  --bs-navy-700: #1b3a5c;
+  --bs-teal: #1f6f6a;
+  --bs-teal-light: #3aa39b;
+  --bs-gold: #c9a36a;
+  --bs-gold-soft: #e2c794;
+  --bs-cream: #f3efe6;
+  --bs-ink: #e8eef6;
+  --bs-muted: rgba(232, 238, 246, 0.68);
+  --bs-danger: #e57373;
+  --bs-success: #66bb6a;
+  --bs-radius: 18px;
+  --bs-radius-sm: 12px;
+  --bs-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  --bs-font: 'Outfit', system-ui, sans-serif;
+  --bs-display: 'Cormorant Garamond', Georgia, serif;
+  --bs-transition: 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
